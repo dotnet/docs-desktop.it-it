@@ -1,0 +1,47 @@
+---
+title: 'Procedura: impostare la dimensione degli elementi affiancati di un TileBrush'
+ms.date: 03/30/2017
+helpviewer_keywords:
+- TileBrush [WPF], size of tile properties
+- Viewport property of TileBrush [WPF]
+ms.assetid: 04f41090-1b46-4e36-832f-d27d28708b8c
+ms.openlocfilehash: af7bab59a292549b29dad9b6a7417f22b1b84e48
+ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96961303"
+---
+# <a name="how-to-set-the-tile-size-for-a-tilebrush"></a><span data-ttu-id="b4721-102">Procedura: impostare la dimensione degli elementi affiancati di un TileBrush</span><span class="sxs-lookup"><span data-stu-id="b4721-102">How to: Set the Tile Size for a TileBrush</span></span>
+
+<span data-ttu-id="b4721-103">In questo esempio viene illustrato come impostare le dimensioni del riquadro per un oggetto <xref:System.Windows.Media.TileBrush> .</span><span class="sxs-lookup"><span data-stu-id="b4721-103">This example shows how to set the tile size for a <xref:System.Windows.Media.TileBrush>.</span></span> <span data-ttu-id="b4721-104">Per impostazione predefinita, un <xref:System.Windows.Media.TileBrush> produce un unico riquadro che riempie completamente l'area da disegnare.</span><span class="sxs-lookup"><span data-stu-id="b4721-104">By default, a <xref:System.Windows.Media.TileBrush> produces a single tile that completely fills the area that you are painting.</span></span> <span data-ttu-id="b4721-105">È possibile eseguire l'override di questo comportamento impostando le <xref:System.Windows.Media.TileBrush.Viewport%2A> <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> proprietà e.</span><span class="sxs-lookup"><span data-stu-id="b4721-105">You can override this behavior by setting the <xref:System.Windows.Media.TileBrush.Viewport%2A> and <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> properties.</span></span>
+
+<span data-ttu-id="b4721-106">La <xref:System.Windows.Media.TileBrush.Viewport%2A> proprietà specifica le dimensioni del riquadro per un oggetto <xref:System.Windows.Media.TileBrush> .</span><span class="sxs-lookup"><span data-stu-id="b4721-106">The <xref:System.Windows.Media.TileBrush.Viewport%2A> property specifies the tile size for a <xref:System.Windows.Media.TileBrush>.</span></span> <span data-ttu-id="b4721-107">Per impostazione predefinita, il valore della <xref:System.Windows.Media.TileBrush.Viewport%2A> proprietà è relativo alla dimensione dell'area da disegnare.</span><span class="sxs-lookup"><span data-stu-id="b4721-107">By default, the value of the <xref:System.Windows.Media.TileBrush.Viewport%2A> property is relative to the size of the area being painted.</span></span> <span data-ttu-id="b4721-108">Per fare in modo che la <xref:System.Windows.Media.TileBrush.Viewport%2A> proprietà specifichi una dimensione assoluta, impostare la <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> proprietà su <xref:System.Windows.Media.BrushMappingMode.Absolute> .</span><span class="sxs-lookup"><span data-stu-id="b4721-108">To make the <xref:System.Windows.Media.TileBrush.Viewport%2A> property specify an absolute tile size, set the <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to <xref:System.Windows.Media.BrushMappingMode.Absolute>.</span></span>
+
+## <a name="example"></a><span data-ttu-id="b4721-109">Esempio</span><span class="sxs-lookup"><span data-stu-id="b4721-109">Example</span></span>
+
+<span data-ttu-id="b4721-110">Nell'esempio seguente viene usato un oggetto <xref:System.Windows.Media.ImageBrush> , un tipo di <xref:System.Windows.Media.TileBrush> , per disegnare un rettangolo con riquadri.</span><span class="sxs-lookup"><span data-stu-id="b4721-110">The following example uses an <xref:System.Windows.Media.ImageBrush>, a type of <xref:System.Windows.Media.TileBrush>, to paint a rectangle with tiles.</span></span> <span data-ttu-id="b4721-111">Nell'esempio viene impostato ogni riquadro su 50% del 50% dell'area di output (rettangolo).</span><span class="sxs-lookup"><span data-stu-id="b4721-111">The example sets each tile to 50 percent by 50 percent of the output area (the rectangle).</span></span> <span data-ttu-id="b4721-112">Di conseguenza, il rettangolo viene disegnato con quattro proiezioni dell'immagine.</span><span class="sxs-lookup"><span data-stu-id="b4721-112">As a result, the rectangle is painted with four projections of the image.</span></span>
+
+<span data-ttu-id="b4721-113">La figura seguente mostra l'output prodotto dall'esempio:</span><span class="sxs-lookup"><span data-stu-id="b4721-113">The following illustration shows the output that the example produces:</span></span>
+
+![Rettangolo con quattro ciliege che dimostrano l'affiancamento con un pennello immagine.](./media/how-to-set-the-tile-size-for-a-tilebrush/rectangle-tile-image-brush.png)
+
+[!code-csharp[UsingImageBrush_snip#RelativeTileSizeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#relativetilesizeexample)]
+
+<span data-ttu-id="b4721-115">Nell'esempio successivo viene creato un oggetto, ne viene <xref:System.Windows.Media.ImageBrush> impostata la proprietà <xref:System.Windows.Media.TileBrush.Viewport%2A> su e la proprietà su e `0,0,25,25` <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> <xref:System.Windows.Media.BrushMappingMode.Absolute> viene utilizzata per disegnare un altro rettangolo.</span><span class="sxs-lookup"><span data-stu-id="b4721-115">The next example creates an <xref:System.Windows.Media.ImageBrush>, sets its <xref:System.Windows.Media.TileBrush.Viewport%2A> to `0,0,25,25` and its <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> to <xref:System.Windows.Media.BrushMappingMode.Absolute>, and uses it to paint another rectangle.</span></span> <span data-ttu-id="b4721-116">Di conseguenza, il pennello genera tessere con una larghezza pari a 25 pixel e un'altezza pari a 25 pixel.</span><span class="sxs-lookup"><span data-stu-id="b4721-116">As a result, the brush produces tiles that have a width of 25  pixels and a height of 25 pixels .</span></span>
+
+<span data-ttu-id="b4721-117">La figura seguente mostra l'output prodotto dall'esempio:</span><span class="sxs-lookup"><span data-stu-id="b4721-117">The following illustration shows the output that the example produces:</span></span>
+
+![Rettangolo con 48 ciliege che dimostrano un TileBrush affiancato con un viewport.](./media/how-to-set-the-tile-size-for-a-tilebrush/25-x-25-viewport-tilebrush.png)
+
+[!code-csharp[UsingImageBrush_snip#AbsoluteTileSizeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#absolutetilesizeexample)]
+
+<span data-ttu-id="b4721-119">Gli esempi precedenti fanno parte di un esempio più esaustivo.</span><span class="sxs-lookup"><span data-stu-id="b4721-119">The preceding examples are part of a larger sample.</span></span> <span data-ttu-id="b4721-120">Per l'esempio completo, vedere [esempio ImageBrush](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/ImageBrush).</span><span class="sxs-lookup"><span data-stu-id="b4721-120">For the complete sample, see [ImageBrush Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/ImageBrush).</span></span>
+
+<span data-ttu-id="b4721-121">Sebbene in questo esempio venga utilizzata la <xref:System.Windows.Media.ImageBrush> classe, le <xref:System.Windows.Media.TileBrush.Viewport%2A> <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> proprietà e si comportano in modo identico per gli altri <xref:System.Windows.Media.TileBrush> oggetti, ovvero per <xref:System.Windows.Media.DrawingBrush> e <xref:System.Windows.Media.VisualBrush> .</span><span class="sxs-lookup"><span data-stu-id="b4721-121">Although this example uses the <xref:System.Windows.Media.ImageBrush> class, the <xref:System.Windows.Media.TileBrush.Viewport%2A> and <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> properties behave identically for the other <xref:System.Windows.Media.TileBrush> objects, that is, for <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush>.</span></span> <span data-ttu-id="b4721-122">Per altre informazioni su <xref:System.Windows.Media.ImageBrush> e sugli altri <xref:System.Windows.Media.TileBrush> oggetti, vedere [disegnare con immagini, disegni e oggetti visivi](painting-with-images-drawings-and-visuals.md).</span><span class="sxs-lookup"><span data-stu-id="b4721-122">For more information about <xref:System.Windows.Media.ImageBrush> and the other <xref:System.Windows.Media.TileBrush> objects, see [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="b4721-123">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="b4721-123">See also</span></span>
+
+- <xref:System.Windows.Media.TileBrush>
+- [<span data-ttu-id="b4721-124">Disegnare con oggetti Image, Drawing e Visual</span><span class="sxs-lookup"><span data-stu-id="b4721-124">Painting with Images, Drawings, and Visuals</span></span>](painting-with-images-drawings-and-visuals.md)
+- [<span data-ttu-id="b4721-125">Creare modelli di elementi affiancati differenti con un TileBrush</span><span class="sxs-lookup"><span data-stu-id="b4721-125">Create Different Tile Patterns with a TileBrush</span></span>](how-to-create-different-tile-patterns-with-a-tilebrush.md)
