@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Guida al desktop .NET per Windows Forms
+summary: Informazioni su Windows Forms (WinForms), un'interfaccia utente grafica per Windows e .NET Framework.
+metadata:
+  title: Documentazione di Windows Forms per .NET
+  description: Informazioni su Windows Forms (WinForms), un'interfaccia utente grafica per Windows e .NET Framework.
+  ms.topic: landing-page
+  ms.date: 08/30/2020
+  ms.openlocfilehash: 34af1d837c7e886a92b441ec51d2b82075b49589
+  ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 12/09/2020
+  ms.locfileid: "96965416"
+landingContent:
+- title: WinForms per .NET Framework
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Panoramica di Windows Forms
+      url: windows-forms-overview.md
+  - linkListType: get-started
+    links:
+    - text: Introduzione a Progettazione Windows Form
+      url: /visualstudio/designers/walkthrough-windows-forms-designer
+    - text: Creare un'app WinForms dalla riga di comando
+      url: how-to-create-a-windows-forms-application-from-the-command-line.md
+- title: Controlli
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Sviluppo di controlli personalizzati
+      url: controls/developing-windows-forms-controls-at-design-time.md
+    - text: Sviluppo di controlli
+      url: controls/developing-windows-forms-controls-at-design-time.md
+  - linkListType: how-to-guide
+    links:
+    - text: Aggiungere controlli a Windows Forms
+      url: controls/how-to-add-controls-to-windows-forms.md
+    - text: Posizionare i controlli su Windows Forms
+      url: controls/how-to-position-controls-on-windows-forms.md
+  - linkListType: reference
+    links:
+    - text: Controlli Windows Form per funzione
+      url: controls/windows-forms-controls-by-function.md
+- title: Eventi
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Eventi in Windows Forms
+      url: events-overview-windows-forms.md
+    - text: Gestori eventi in Windows Forms
+      url: event-handlers-overview-windows-forms.md
+  - linkListType: concept
+    links:
+    - text: Ordine in cui vengono generati gli eventi
+      url: order-of-events-in-windows-forms.md
+- title: Input
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Informazioni sull'input da tastiera
+      url: how-keyboard-input-works.md
+    - text: Informazioni sull'input del mouse
+      url: how-mouse-input-works-in-windows-forms.md
+  - linkListType: concept
+    links:
+    - text: Eventi della tastiera
+      url: using-keyboard-events.md
+    - text: Eventi mouse
+      url: mouse-events-in-windows-forms.md
+    - text: Puntatori del mouse
+      url: mouse-pointers-in-windows-forms.md
+  - linkListType: how-to-guide
+    links:
+    - text: Modificare l'input da tastiera
+      url: how-to-modify-keyboard-input-to-a-standard-control.md
+    - text: Rilevare i tasti di scelta rapida del modificatore
+      url: how-to-determine-which-modifier-key-was-pressed.md
+    - text: Distinguere tra clic singoli/doppi
+      url: how-to-distinguish-between-clicks-and-double-clicks.md
