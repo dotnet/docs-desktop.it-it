@@ -1,0 +1,47 @@
+---
+title: Nascondi colonne nel controllo DataGridView
+description: Informazioni su come nascondere le colonne a livello di codice nel controllo DataGridView Windows Forms impostando la proprietà DataGridViewColumn. Visible su false.
+ms.date: 03/30/2017
+dev_langs:
+- csharp
+- vb
+helpviewer_keywords:
+- DataGridView control [Windows Forms], hiding columns
+- data grids [Windows Forms], hiding columns
+- columns [Windows Forms], hiding
+ms.assetid: 3f94143a-2ef0-49a5-a22a-b2e6f9289642
+ms.openlocfilehash: 27e9f331151acd68d76233bc7dbb09c2d870afde
+ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96963787"
+---
+# <a name="how-to-hide-columns-in-the-windows-forms-datagridview-control"></a><span data-ttu-id="ed4d7-103">Procedura: Nascondere le colonne nel controllo DataGridView di Windows Forms</span><span class="sxs-lookup"><span data-stu-id="ed4d7-103">How to: Hide Columns in the Windows Forms DataGridView Control</span></span>
+<span data-ttu-id="ed4d7-104">A volte può essere necessario visualizzare solo alcune colonne tra quelle disponibili in un controllo <xref:System.Windows.Forms.DataGridView> Windows Form.</span><span class="sxs-lookup"><span data-stu-id="ed4d7-104">Sometimes you will want to display only some of the columns that are available in a Windows Forms <xref:System.Windows.Forms.DataGridView> control.</span></span> <span data-ttu-id="ed4d7-105">Ad esempio, può essere necessario mostrare una colonna con gli stipendi dei dipendenti agli utenti con credenziali di gestione e nasconderla invece agli altri utenti.</span><span class="sxs-lookup"><span data-stu-id="ed4d7-105">For example, you might want to show an employee salary column to users with management credentials while hiding it from other users.</span></span> <span data-ttu-id="ed4d7-106">Oppure potrebbe essere necessario associare il controllo a un'origine dati contenente più colonne, di cui solo alcune devono essere visualizzate.</span><span class="sxs-lookup"><span data-stu-id="ed4d7-106">Alternately, you might want to bind the control to a data source that contains many columns, only some of which you want to display.</span></span> <span data-ttu-id="ed4d7-107">In questo caso, si rimuovono in genere le colonne che non interessa visualizzare, invece di nasconderle.</span><span class="sxs-lookup"><span data-stu-id="ed4d7-107">In this case, you will typically remove the columns you are not interested in displaying rather than hide them.</span></span>  
+  
+ <span data-ttu-id="ed4d7-108">Nel controllo <xref:System.Windows.Forms.DataGridView>, il valore della proprietà <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> di una colonna determina se la colonna viene visualizzata.</span><span class="sxs-lookup"><span data-stu-id="ed4d7-108">In the <xref:System.Windows.Forms.DataGridView> control, the <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property value of a column determines whether that column is displayed.</span></span>  
+  
+ <span data-ttu-id="ed4d7-109">Questa attività è supportata in Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="ed4d7-109">There is support for this task in Visual Studio.</span></span>  <span data-ttu-id="ed4d7-110">Vedere anche [procedura: nascondere le colonne nel controllo DataGridView Windows Forms usando la finestra di progettazione](hide-columns-in-the-datagrid-using-the-designer.md).</span><span class="sxs-lookup"><span data-stu-id="ed4d7-110">Also see [How to: Hide Columns in the Windows Forms DataGridView Control Using the Designer](hide-columns-in-the-datagrid-using-the-designer.md).</span></span>  
+  
+### <a name="to-hide-a-column-programmatically"></a><span data-ttu-id="ed4d7-111">Per nascondere una colonna a livello di codice</span><span class="sxs-lookup"><span data-stu-id="ed4d7-111">To hide a column programmatically</span></span>  
+  
+- <span data-ttu-id="ed4d7-112">Impostare la proprietà <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A?displayProperty=nameWithType> su `false`.</span><span class="sxs-lookup"><span data-stu-id="ed4d7-112">Set the <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A?displayProperty=nameWithType> property to `false`.</span></span> <span data-ttu-id="ed4d7-113">Per nascondere una colonna `CustomerID` generata automaticamente durante il data binding, inserire il seguente esempio di codice in un gestore dell'evento <xref:System.Windows.Forms.DataGridView.DataBindingComplete>.</span><span class="sxs-lookup"><span data-stu-id="ed4d7-113">To hide a `CustomerID` column that is automatically generated during data binding, place the following code example in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete> event handler.</span></span>  
+  
+     [!code-csharp[System.Windows.Forms.DataGridViewMisc#063](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#063)]
+     [!code-vb[System.Windows.Forms.DataGridViewMisc#063](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#063)]  
+  
+## <a name="compiling-the-code"></a><span data-ttu-id="ed4d7-114">Compilazione del codice</span><span class="sxs-lookup"><span data-stu-id="ed4d7-114">Compiling the Code</span></span>  
+ <span data-ttu-id="ed4d7-115">L'esempio presenta i requisiti seguenti:</span><span class="sxs-lookup"><span data-stu-id="ed4d7-115">This example requires:</span></span>  
+  
+- <span data-ttu-id="ed4d7-116">Un controllo <xref:System.Windows.Forms.DataGridView> denominato `dataGridView1` contenente una colonna denominata `CustomerID`.</span><span class="sxs-lookup"><span data-stu-id="ed4d7-116">A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` that contains a column named `CustomerID`.</span></span>  
+  
+- <span data-ttu-id="ed4d7-117">Riferimenti agli assembly <xref:System?displayProperty=nameWithType> e <xref:System.Windows.Forms?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="ed4d7-117">References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="ed4d7-118">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="ed4d7-118">See also</span></span>
+
+- <xref:System.Windows.Forms.DataGridView>
+- <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A?displayProperty=nameWithType>
+- [<span data-ttu-id="ed4d7-119">Funzionalità di base per colonna, riga e cella nel controllo DataGridView di Windows Form</span><span class="sxs-lookup"><span data-stu-id="ed4d7-119">Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control</span></span>](basic-column-row-and-cell-features-wf-datagridview-control.md)
+- [<span data-ttu-id="ed4d7-120">Procedura: Rimuovere le colonne generate automaticamente da un controllo DataGridView di Windows Forms</span><span class="sxs-lookup"><span data-stu-id="ed4d7-120">How to: Remove Autogenerated Columns from a Windows Forms DataGridView Control</span></span>](remove-autogenerated-columns-from-a-wf-datagridview-control.md)
+- [<span data-ttu-id="ed4d7-121">Procedura: Modificare l'ordine delle colonne nel controllo DataGridView di Windows Forms</span><span class="sxs-lookup"><span data-stu-id="ed4d7-121">How to: Change the Order of Columns in the Windows Forms DataGridView Control</span></span>](how-to-change-the-order-of-columns-in-the-windows-forms-datagridview-control.md)

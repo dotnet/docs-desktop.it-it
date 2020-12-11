@@ -1,0 +1,41 @@
+---
+title: 'Procedura: rendere trasparente o semitrasparente un oggetto UIElement'
+ms.date: 03/30/2017
+helpviewer_keywords:
+- UIElements [WPF], transparency
+- opacity [WPF], of UIElements
+- transparency of UIElements [WPF]
+- UIElements [WPF], opacity
+ms.assetid: a49fc8d6-7b32-4f28-9122-39b632a19b4b
+ms.openlocfilehash: 1de9a7e11fee241ecb71242e9808e77b7e5e63b0
+ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96963748"
+---
+# <a name="how-to-make-a-uielement-transparent-or-semi-transparent"></a><span data-ttu-id="581eb-102">Procedura: rendere trasparente o semitrasparente un oggetto UIElement</span><span class="sxs-lookup"><span data-stu-id="581eb-102">How to: Make a UIElement Transparent or Semi-Transparent</span></span>
+<span data-ttu-id="581eb-103">In questo esempio viene illustrato come rendere <xref:System.Windows.UIElement> trasparente o semitrasparente.</span><span class="sxs-lookup"><span data-stu-id="581eb-103">This example shows how to make a <xref:System.Windows.UIElement> transparent or semi-transparent.</span></span> <span data-ttu-id="581eb-104">Per rendere trasparente o semitrasparente un elemento, impostare la <xref:System.Windows.UIElement.Opacity%2A> Proprietà.</span><span class="sxs-lookup"><span data-stu-id="581eb-104">To make an element transparent or semi-transparent, you set its <xref:System.Windows.UIElement.Opacity%2A> property.</span></span> <span data-ttu-id="581eb-105">Il valore `0.0` rende l'elemento completamente trasparente, mentre un valore `1.0` rende l'elemento completamente opaco.</span><span class="sxs-lookup"><span data-stu-id="581eb-105">A value of `0.0` makes the element completely transparent, while a value of `1.0` makes the element completely opaque.</span></span> <span data-ttu-id="581eb-106">`0.5`Il valore rende opaco l'elemento 50% e così via.</span><span class="sxs-lookup"><span data-stu-id="581eb-106">A value of `0.5` makes the element 50% opaque, and so on.</span></span> <span data-ttu-id="581eb-107"><xref:System.Windows.UIElement.Opacity%2A>Per impostazione predefinita, l'elemento è impostato su `1.0` .</span><span class="sxs-lookup"><span data-stu-id="581eb-107">An element's <xref:System.Windows.UIElement.Opacity%2A> is set to `1.0` by default.</span></span>  
+  
+## <a name="example"></a><span data-ttu-id="581eb-108">Esempio</span><span class="sxs-lookup"><span data-stu-id="581eb-108">Example</span></span>  
+ <span data-ttu-id="581eb-109">Nell'esempio seguente viene impostata la proprietà <xref:System.Windows.UIElement.Opacity%2A> di un pulsante su `0.25` , rendendola e il relativo contenuto, in questo caso il testo del pulsante, il 25% opaco.</span><span class="sxs-lookup"><span data-stu-id="581eb-109">The following example sets the <xref:System.Windows.UIElement.Opacity%2A> of a button to `0.25`, making it and its contents (in this case, the button's text) 25% opaque.</span></span>  
+  
+ [!code-xaml[brushsamples_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_snip/CS/OpacityExample.xaml#2)]  
+  
+ [!code-csharp[brushsamples_procedural_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_procedural_snip/CSharp/OpacityExample.cs#2)]  
+  
+ <span data-ttu-id="581eb-110">Se il contenuto di un elemento ha <xref:System.Windows.UIElement.Opacity%2A> impostazioni proprie, tali valori vengono moltiplicati per gli elementi che lo contengono <xref:System.Windows.UIElement.Opacity%2A> .</span><span class="sxs-lookup"><span data-stu-id="581eb-110">If an element's contents have their own <xref:System.Windows.UIElement.Opacity%2A> settings, those values are multiplied against the containing elements <xref:System.Windows.UIElement.Opacity%2A>.</span></span>  
+  
+ <span data-ttu-id="581eb-111">Nell'esempio seguente vengono impostati un pulsante <xref:System.Windows.UIElement.Opacity%2A> su `0.25` e l'oggetto <xref:System.Windows.UIElement.Opacity%2A> di un <xref:System.Windows.Controls.Image> controllo contenuto nel pulsante in `0.5` .</span><span class="sxs-lookup"><span data-stu-id="581eb-111">The following example sets a button's <xref:System.Windows.UIElement.Opacity%2A> to `0.25`, and the <xref:System.Windows.UIElement.Opacity%2A> of an <xref:System.Windows.Controls.Image> control contained with in the button to `0.5`.</span></span> <span data-ttu-id="581eb-112">Di conseguenza, l'immagine viene visualizzata 12,5% opaca: 0,25 \* 0,5 = 0,125.</span><span class="sxs-lookup"><span data-stu-id="581eb-112">As a result, the image appears 12.5% opaque: 0.25 \* 0.5 = 0.125.</span></span>  
+  
+ [!code-xaml[brushsamples_snip#3](~/samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_snip/CS/OpacityExample.xaml#3)]  
+  
+ [!code-csharp[brushsamples_procedural_snip#3](~/samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_procedural_snip/CSharp/OpacityExample.cs#3)]  
+  
+ <span data-ttu-id="581eb-113">Un altro modo per controllare l'opacità di un elemento consiste nell'impostare l'opacità dell'oggetto <xref:System.Windows.Media.Brush> che disegna l'elemento.</span><span class="sxs-lookup"><span data-stu-id="581eb-113">Another way to control the opacity of an element is to set the opacity of the <xref:System.Windows.Media.Brush> that paints the element.</span></span> <span data-ttu-id="581eb-114">Questo approccio consente di modificare selettivamente l'opacità delle parti di un elemento e offre vantaggi in merito alle prestazioni rispetto all'utilizzo della proprietà dell'elemento <xref:System.Windows.UIElement.Opacity%2A> .</span><span class="sxs-lookup"><span data-stu-id="581eb-114">This approach enables you to selectively alter the opacity of portions of an element, and provides performance benefits over using the element's <xref:System.Windows.UIElement.Opacity%2A> property.</span></span> <span data-ttu-id="581eb-115">Nell'esempio seguente viene impostato il <xref:System.Windows.Media.Brush.Opacity%2A> valore di un oggetto <xref:System.Windows.Media.SolidColorBrush> utilizzato per disegnare l'oggetto del pulsante su <xref:System.Windows.Controls.Control.Background%2A> `0.25` .</span><span class="sxs-lookup"><span data-stu-id="581eb-115">The following example sets the <xref:System.Windows.Media.Brush.Opacity%2A> of a <xref:System.Windows.Media.SolidColorBrush> used to paint the button's <xref:System.Windows.Controls.Control.Background%2A> is set to `0.25`.</span></span> <span data-ttu-id="581eb-116">Di conseguenza, lo sfondo del pennello è opaco al 25%, ma il relativo contenuto (il testo del pulsante) rimane opaco al 100%.</span><span class="sxs-lookup"><span data-stu-id="581eb-116">As a result, the brush's background is 25% opaque, but its contents (the button's text) remain 100% opaque.</span></span>  
+  
+ [!code-xaml[brushsamples_snip#4](~/samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_snip/CS/OpacityExample.xaml#4)]  
+  
+ [!code-csharp[brushsamples_procedural_snip#4](~/samples/snippets/csharp/VS_Snippets_Wpf/brushsamples_procedural_snip/CSharp/OpacityExample.cs#4)]  
+  
+ <span data-ttu-id="581eb-117">È anche possibile controllare l'opacità dei singoli colori all'interno di un pennello.</span><span class="sxs-lookup"><span data-stu-id="581eb-117">You may also control the opacity of individual colors within a brush.</span></span> <span data-ttu-id="581eb-118">Per ulteriori informazioni sui colori e sui pennelli, vedere [Cenni preliminari sulla pittura con colori a tinta unita e sfumature](../graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md).</span><span class="sxs-lookup"><span data-stu-id="581eb-118">For more information about colors and brushes, see [Painting with Solid Colors and Gradients Overview](../graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md).</span></span> <span data-ttu-id="581eb-119">Per un esempio che illustra come animare l'opacità di un elemento, vedere [animare l'opacità di un elemento o di un pennello](../graphics-multimedia/how-to-animate-the-opacity-of-an-element-or-brush.md).</span><span class="sxs-lookup"><span data-stu-id="581eb-119">For an example showing how to animate an element's opacity, see [Animate the Opacity of an Element or Brush](../graphics-multimedia/how-to-animate-the-opacity-of-an-element-or-brush.md).</span></span>
