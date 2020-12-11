@@ -1,0 +1,28 @@
+---
+title: Panoramica del controllo PrintPreviewControl
+ms.date: 03/30/2017
+f1_keywords:
+- PrintPreviewControl
+helpviewer_keywords:
+- print preview
+- PrintPreviewControl control
+ms.assetid: 4513c6c7-5e9b-4f4c-82ca-00f993a26955
+ms.openlocfilehash: 8dfe5802a24d5ec85ed908fd04c5550e1fbec012
+ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96965635"
+---
+# <a name="printpreviewcontrol-control-overview-windows-forms"></a><span data-ttu-id="d93df-102">Cenni preliminari sul controllo PrintPreviewControl (Windows Form)</span><span class="sxs-lookup"><span data-stu-id="d93df-102">PrintPreviewControl Control Overview (Windows Forms)</span></span>
+<span data-ttu-id="d93df-103">Il Windows Forms <xref:System.Windows.Forms.PrintPreviewControl> viene usato per visualizzare un [PrintDocument](printdocument-component-windows-forms.md) come verrà visualizzato quando viene stampato.</span><span class="sxs-lookup"><span data-stu-id="d93df-103">The Windows Forms <xref:System.Windows.Forms.PrintPreviewControl> is used to display a [PrintDocument](printdocument-component-windows-forms.md) as it will appear when printed.</span></span> <span data-ttu-id="d93df-104">Il controllo non dispone di alcun pulsante o altri elementi dell'interfaccia utente, pertanto, in genere <xref:System.Windows.Forms.PrintPreviewControl> viene usato solo se si vuole creare un'interfaccia utente di anteprima di stampa personalizzata.</span><span class="sxs-lookup"><span data-stu-id="d93df-104">This control has no buttons or other user interface elements, so typically you use the <xref:System.Windows.Forms.PrintPreviewControl> only if you wish to write your own print-preview user interface.</span></span> <span data-ttu-id="d93df-105">Se si desidera l'interfaccia utente standard, utilizzare un <xref:System.Windows.Forms.PrintPreviewDialog> controllo; vedere [Cenni preliminari sul controllo PrintPreviewDialog](printpreviewdialog-control-overview-windows-forms.md) per una panoramica.</span><span class="sxs-lookup"><span data-stu-id="d93df-105">If you want the standard user interface, use a <xref:System.Windows.Forms.PrintPreviewDialog> control; see [PrintPreviewDialog Control Overview](printpreviewdialog-control-overview-windows-forms.md) for an overview.</span></span>  
+  
+## <a name="key-properties"></a><span data-ttu-id="d93df-106">Proprietà chiave</span><span class="sxs-lookup"><span data-stu-id="d93df-106">Key Properties</span></span>  
+ <span data-ttu-id="d93df-107">La proprietà chiave del controllo è <xref:System.Windows.Forms.PrintPreviewControl.Document%2A> , che imposta il documento da visualizzare in anteprima.</span><span class="sxs-lookup"><span data-stu-id="d93df-107">The control's key property is <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, which sets the document to be previewed.</span></span> <span data-ttu-id="d93df-108">Il documento deve essere un <xref:System.Drawing.Printing.PrintDocument> oggetto.</span><span class="sxs-lookup"><span data-stu-id="d93df-108">The document must be a <xref:System.Drawing.Printing.PrintDocument> object.</span></span> <span data-ttu-id="d93df-109">Per una panoramica della creazione di documenti per la stampa, vedere [Cenni preliminari sul componente PrintDocument](printdocument-component-overview-windows-forms.md) e supporto per la [stampa Windows Forms](../advanced/windows-forms-print-support.md).</span><span class="sxs-lookup"><span data-stu-id="d93df-109">For an overview of creating documents for printing, see [PrintDocument Component Overview](printdocument-component-overview-windows-forms.md) and [Windows Forms Print Support](../advanced/windows-forms-print-support.md).</span></span> <span data-ttu-id="d93df-110">Le <xref:System.Windows.Forms.PrintPreviewControl.Columns%2A> <xref:System.Windows.Forms.PrintPreviewControl.Rows%2A> proprietà e determinano il numero di pagine visualizzate orizzontalmente e verticalmente sul controllo.</span><span class="sxs-lookup"><span data-stu-id="d93df-110">The <xref:System.Windows.Forms.PrintPreviewControl.Columns%2A> and <xref:System.Windows.Forms.PrintPreviewControl.Rows%2A> properties determine the number of pages displayed horizontally and vertically on the control.</span></span> <span data-ttu-id="d93df-111">L'anti-aliasing può rendere il testo più semplice, ma può anche rendere più lenta la visualizzazione. per usarlo, impostare la <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A> proprietà su `true` .</span><span class="sxs-lookup"><span data-stu-id="d93df-111">Antialiasing can make the text appear smoother, but it can also make the display slower; to use it, set the <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A> property to `true`.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="d93df-112">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="d93df-112">See also</span></span>
+
+- <xref:System.Windows.Forms.PrintPreviewControl>
+- [<span data-ttu-id="d93df-113">Panoramica del controllo PrintPreviewDialog</span><span class="sxs-lookup"><span data-stu-id="d93df-113">PrintPreviewDialog Control Overview</span></span>](printpreviewdialog-control-overview-windows-forms.md)
+- [<span data-ttu-id="d93df-114">Controllo PrintPreviewControl</span><span class="sxs-lookup"><span data-stu-id="d93df-114">PrintPreviewControl Control</span></span>](printpreviewcontrol-control-windows-forms.md)
+- [<span data-ttu-id="d93df-115">Controlli e componenti della finestra di dialogo</span><span class="sxs-lookup"><span data-stu-id="d93df-115">Dialog-Box Controls and Components</span></span>](dialog-box-controls-and-components-windows-forms.md)

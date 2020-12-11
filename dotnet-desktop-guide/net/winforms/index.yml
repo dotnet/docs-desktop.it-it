@@ -1,0 +1,85 @@
+### YamlMime:Landing
+title: Documentazione di Windows Forms
+summary: Informazioni sull'uso di Windows Forms, un'interfaccia utente grafica open source per Windows, in .NET 5.
+metadata:
+  title: Documentazione di Windows Forms per .NET 5
+  description: Informazioni sull'uso di Windows Forms, un'interfaccia utente grafica open source per Windows, in .NET 5.
+  ms.topic: landing-page
+  ms.date: 10/26/2020
+  ms.openlocfilehash: 1b8bc1cfa7655a33819c77ba4d5af75f7c838e74
+  ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 12/09/2020
+  ms.locfileid: "96966730"
+landingContent:
+- title: Informazioni sulle Windows Forms
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Novità
+      url: whats-new/index.md
+  - linkListType: overview
+    links:
+    - text: Panoramica di Windows Forms
+      url: overview/index.md
+  - linkListType: tutorial
+    links:
+    - text: Creare una nuova app
+      url: get-started/create-app-visual-studio.md
+    - text: Eseguire la migrazione da .NET Framework
+      url: migration/index.md
+  - linkListType: download
+    links:
+    - text: Visual Studio 2019 versione 16,8
+      url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms
+- title: Controlli
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Informazioni sui controlli
+      url: controls/overview.md
+  - linkListType: concept
+    links:
+    - text: Layout
+      url: controls/layout.md
+  - linkListType: how-to-guide
+    links:
+    - text: Aggiungere un controllo
+      url: controls/how-to-add-to-a-form.md
+    - text: Aggiungi chiavi di accesso (collegamento)
+      url: controls/how-to-create-access-keys.md
+- title: Input da tastiera
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Informazioni sulla tastiera
+      url: input-keyboard/overview.md
+  - linkListType: concept
+    links:
+    - text: Eventi della tastiera
+      url: input-keyboard/events.md
+  - linkListType: how-to-guide
+    links:
+    - text: Gestire l'input da tastiera
+      url: input-keyboard/how-to-handle-forms.md
+    - text: Modifica eventi chiave
+      url: input-keyboard/how-to-change-key-press.md
+- title: Input tramite mouse
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Informazioni sul mouse
+      url: input-mouse/overview.md
+  - linkListType: concept
+    links:
+    - text: Eventi mouse
+      url: input-mouse/events.md
+    - text: Trascinamento della selezione
+      url: input-mouse/drag-and-drop.md
+  - linkListType: how-to-guide
+    links:
+    - text: Gestire il cursore
+      url: input-mouse/how-to-manage-cursor-pointer.md
+    - text: Simula gli eventi del mouse
+      url: input-mouse/how-to-simulate-events.md
