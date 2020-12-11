@@ -1,0 +1,47 @@
+---
+title: Impostazioni dell'applicazione
+ms.date: 04/07/2017
+f1_keywords:
+- ClientApplicationSettings
+helpviewer_keywords:
+- application settings [Windows Forms]
+- Windows Forms, application settings
+ms.assetid: 64090a34-8556-4904-8ea0-20efe9f8c886
+ms.openlocfilehash: 142cab50ab7a2fbe832af0656ffc24fdf8719fd3
+ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96951563"
+---
+# <a name="application-settings-for-windows-forms"></a>Impostazioni delle applicazioni per Windows Form
+
+La funzionalità Impostazioni applicazione di Windows Form semplifica le operazioni di creazione, archiviazione e gestione delle preferenze personalizzate a livello di applicazione e utente nel computer client. Impostazioni applicazione consente non solo di archiviare dati relativi all'applicazione, quali stringhe di connessione a database, ma anche dati specifici dell'utente, quali le posizioni delle barre degli strumenti e gli elenchi usati di recente.  
+  
+## <a name="in-this-section"></a>Contenuto della sezione  
+
+ [Cenni preliminari sulle impostazioni delle applicazioni](application-settings-overview.md)  
+ Descrive come creare e archiviare i dati delle impostazioni per conto dell'applicazione e degli utenti.  
+  
+ [Architettura Impostazioni applicazione](application-settings-architecture.md)  
+ Descrive il funzionamento della funzionalità Impostazioni applicazione e analizza le funzioni avanzate dell'architettura, come i raggruppamenti di impostazioni e le chiavi delle impostazioni.  
+  
+ [Attributi delle impostazioni delle applicazioni](application-settings-attributes.md)  
+ Elenca e descrive gli attributi che è possibile applicare a una classe wrapper delle impostazioni dell'applicazione o alle proprietà delle impostazioni.  
+  
+ [Impostazioni delle applicazioni per i controlli personalizzati](application-settings-for-custom-controls.md)  
+ Viene spiegata la procedura necessaria per consentire ai controlli personalizzati di rendere persistenti le impostazioni dell'applicazione quando sono inclusi in applicazioni di terze parti.  
+  
+ [Procedura: Creare impostazioni applicazione](how-to-create-application-settings.md)  
+ Viene spiegata la creazione di nuove impostazioni dell'applicazione rese persistenti tra le varie sessioni dell'applicazione.  
+  
+ [Procedura: Convalidare le impostazioni applicazione](how-to-validate-application-settings.md)  
+ Viene spiegata la convalida delle impostazioni dell'applicazione prima dell'operazione che le rende persistenti.  
+  
+## <a name="related-topics"></a>Argomenti correlati
+
+[Sezione di configurazione Windows Forms](/dotnet/framework/configure-apps/file-schema/winforms/index) Documenta le impostazioni per abilitare il supporto DPI elevato nell'applicazione Windows Forms a partire dal .NET Framework 4,7.
+
+## <a name="see-also"></a>Vedere anche
+
+- [WinForms](../index.yml)
