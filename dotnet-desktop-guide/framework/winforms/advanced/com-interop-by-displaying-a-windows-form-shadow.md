@@ -1,0 +1,46 @@
+---
+title: "Procedura: Supportare l'interoperabilità COM visualizzando un Windows Form con il metodo ShowDialog"
+ms.date: 03/30/2017
+helpviewer_keywords:
+- COM [Windows Forms]
+- Windows Forms, unmanaged
+- COM interop [Windows Forms], calling methods
+- ActiveX controls [Windows Forms], COM interop
+- Windows Forms, interop
+ms.assetid: 87aac8ad-3c04-43b3-9b0c-d0b00df9ee74
+ms.openlocfilehash: a4b86616fab5603e08fe9efa1213edaa633deeb9
+ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96951538"
+---
+# <a name="how-to-support-com-interop-by-displaying-a-windows-form-with-the-showdialog-method"></a><span data-ttu-id="3bd97-102">Procedura: Supportare l'interoperabilità COM visualizzando un Windows Form con il metodo ShowDialog</span><span class="sxs-lookup"><span data-stu-id="3bd97-102">How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method</span></span>
+
+<span data-ttu-id="3bd97-103">È possibile risolvere i problemi di interoperabilità di Component Object Model (COM) visualizzando il Windows Form in un ciclo di messaggi .NET Framework, creato usando il <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> metodo.</span><span class="sxs-lookup"><span data-stu-id="3bd97-103">You can resolve Component Object Model (COM) interoperability problems by displaying your Windows Form on a .NET Framework message loop, which is created by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.</span></span>  
+  
+ <span data-ttu-id="3bd97-104">Per fare in modo che un form funzioni correttamente da un'applicazione client COM, è necessario eseguirlo in un ciclo di messaggi Windows Form.</span><span class="sxs-lookup"><span data-stu-id="3bd97-104">To make a form work correctly from a COM client application, you must run it on a Windows Forms message loop.</span></span> <span data-ttu-id="3bd97-105">Per eseguire questa operazione, adottare uno degli approcci seguenti:</span><span class="sxs-lookup"><span data-stu-id="3bd97-105">To do this, use one of the following approaches:</span></span>  
+  
+- <span data-ttu-id="3bd97-106">Usare il metodo <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> per visualizzare il Windows Form.</span><span class="sxs-lookup"><span data-stu-id="3bd97-106">Use the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method to display the Windows Form;</span></span>  
+  
+- <span data-ttu-id="3bd97-107">Visualizzare ogni Windows Form in un thread separato.</span><span class="sxs-lookup"><span data-stu-id="3bd97-107">Display each Windows Form on a separate thread.</span></span> <span data-ttu-id="3bd97-108">Per altre informazioni, vedere [Procedura: supportare l'interoperabilità COM mediante la visualizzazione di ogni Windows Form nel relativo thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md).</span><span class="sxs-lookup"><span data-stu-id="3bd97-108">For more information, see [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md).</span></span>  
+  
+## <a name="procedure"></a><span data-ttu-id="3bd97-109">Procedura</span><span class="sxs-lookup"><span data-stu-id="3bd97-109">Procedure</span></span>  
+
+ <span data-ttu-id="3bd97-110">L'utilizzo del <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> metodo può essere il modo più semplice per visualizzare un form in un ciclo di messaggi .NET Framework perché, di tutti gli approcci, è necessario che venga implementato il minor codice.</span><span class="sxs-lookup"><span data-stu-id="3bd97-110">Using the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method can be the easiest way to display a form on a .NET Framework message loop because, of all the approaches, it requires the least code to implement.</span></span>  
+  
+ <span data-ttu-id="3bd97-111">Il metodo <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> sospende il ciclo di messaggi dell'applicazione non gestita e visualizza il form come una finestra di dialogo.</span><span class="sxs-lookup"><span data-stu-id="3bd97-111">The <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method suspends the unmanaged application's message loop and displays the form as a dialog box.</span></span> <span data-ttu-id="3bd97-112">Poiché il ciclo di messaggi dell'applicazione host è stato sospeso, il <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> metodo crea un nuovo ciclo di messaggi .NET Framework per elaborare i messaggi del form.</span><span class="sxs-lookup"><span data-stu-id="3bd97-112">Because the host application's message loop has been suspended, the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method creates a new .NET Framework message loop to process the form's messages.</span></span>  
+  
+ <span data-ttu-id="3bd97-113">Lo svantaggio dell'uso del metodo <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> consiste nel fatto che il form viene aperto come finestra di dialogo modale.</span><span class="sxs-lookup"><span data-stu-id="3bd97-113">The disadvantage of using the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method is that the form will be opened as a modal dialog box.</span></span> <span data-ttu-id="3bd97-114">Questo comportamento blocca eventuali interfacce utente (UI) nell'applicazione chiamante mentre il Windows Form è aperto.</span><span class="sxs-lookup"><span data-stu-id="3bd97-114">This behavior blocks any user interface (UI) in the calling application while the Windows Form is open.</span></span> <span data-ttu-id="3bd97-115">Quando l'utente esce dal form, il ciclo di messaggi .NET Framework si chiude e il ciclo di messaggi dell'applicazione precedente inizia a funzionare di nuovo.</span><span class="sxs-lookup"><span data-stu-id="3bd97-115">When the user exits the form, the .NET Framework message loop closes and the earlier application's message loop starts running again.</span></span>  
+  
+ <span data-ttu-id="3bd97-116">È possibile creare una libreria di classi in Windows Form che dispone di un metodo per visualizzare il form e quindi compilare la libreria di classi per l'interoperabilità COM.</span><span class="sxs-lookup"><span data-stu-id="3bd97-116">You can create a class library in Windows Forms which has a method to show the form, and then build the class library for COM interop.</span></span> <span data-ttu-id="3bd97-117">È possibile usare questo file DLL da Visual Basic 6.0 o Microsoft Foundation Classes (MFC) e da uno dei due ambienti è possibile chiamare il metodo <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> per visualizzare il form.</span><span class="sxs-lookup"><span data-stu-id="3bd97-117">You can use this DLL file from Visual Basic 6.0 or Microsoft Foundation Classes (MFC), and from either of these environments you can call the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method to display the form.</span></span>  
+  
+#### <a name="to-support-com-interop-by-displaying-a-windows-form-with-the-showdialog-method"></a><span data-ttu-id="3bd97-118">Per supportare l'interoperabilità COM visualizzando un Windows Form con il metodo ShowDialog</span><span class="sxs-lookup"><span data-stu-id="3bd97-118">To support COM interop by displaying a windows form with the ShowDialog method</span></span>  
+  
+- <span data-ttu-id="3bd97-119">Sostituire tutte le chiamate al <xref:System.Windows.Forms.Form.Show%2A?displayProperty=nameWithType> metodo con chiamate al <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> metodo nel componente .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="3bd97-119">Replace all calls to the <xref:System.Windows.Forms.Form.Show%2A?displayProperty=nameWithType> method with calls to the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method in your .NET Framework component.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="3bd97-120">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="3bd97-120">See also</span></span>
+
+- [<span data-ttu-id="3bd97-121">Esposizione di componenti .NET Framework a COM</span><span class="sxs-lookup"><span data-stu-id="3bd97-121">Exposing .NET Framework Components to COM</span></span>](/dotnet/framework/interop/exposing-dotnet-components-to-co)
+- [<span data-ttu-id="3bd97-122">Procedura: Supportare l'interoperabilità COM visualizzando ogni Windows Form nel proprio thread</span><span class="sxs-lookup"><span data-stu-id="3bd97-122">How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread</span></span>](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md)
+- [<span data-ttu-id="3bd97-123">Windows Form e applicazioni non gestite</span><span class="sxs-lookup"><span data-stu-id="3bd97-123">Windows Forms and Unmanaged Applications</span></span>](windows-forms-and-unmanaged-applications.md)

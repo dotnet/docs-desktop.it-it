@@ -1,22 +1,29 @@
-# .NET Desktop Guide docs
+---
+ms.openlocfilehash: bb94fdbb36272e21b2aa56d8287a10a8d92396a8
+ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96952271"
+---
+# <a name="net-desktop-guide-docs"></a><span data-ttu-id="e8579-101">Documentazione di .NET desktop Guide</span><span class="sxs-lookup"><span data-stu-id="e8579-101">.NET Desktop Guide docs</span></span>
 
 ![Markdownlint](https://github.com/dotnet/docs-desktop/workflows/Markdownlint/badge.svg)
 
-This repository contains the conceptual documentation for .NET desktop technologies, such as Windows Presentation Foundation (WPF) and Windows Forms (WinForms). It's published at the [.NET Desktop Guide documentation site](https://docs.microsoft.com/dotnet/desktop).
+<span data-ttu-id="e8579-103">Questo repository contiene la documentazione concettuale per le tecnologie desktop .NET, ad esempio Windows Presentation Foundation (WPF) e Windows Forms (WinForms).</span><span class="sxs-lookup"><span data-stu-id="e8579-103">This repository contains the conceptual documentation for .NET desktop technologies, such as Windows Presentation Foundation (WPF) and Windows Forms (WinForms).</span></span> <span data-ttu-id="e8579-104">Viene pubblicato nel sito della [documentazione di .NET desktop Guide](https://docs.microsoft.com/dotnet/desktop).</span><span class="sxs-lookup"><span data-stu-id="e8579-104">It's published at the [.NET Desktop Guide documentation site](https://docs.microsoft.com/dotnet/desktop).</span></span>
 
-## Issues
+## <a name="issues"></a><span data-ttu-id="e8579-105">Problemi</span><span class="sxs-lookup"><span data-stu-id="e8579-105">Issues</span></span>
 
-We have a large community using these resources. We make our best effort to respond to issues in a timely fashion. You can read more about our procedures for classifying and resolving issues in our [Issues policy](issues-policy.md) topic.
+<span data-ttu-id="e8579-106">Queste risorse sono usate da una grande community.</span><span class="sxs-lookup"><span data-stu-id="e8579-106">We have a large community using these resources.</span></span> <span data-ttu-id="e8579-107">Microsoft fa tutto il possibile per risolvere i problemi in modo tempestivo.</span><span class="sxs-lookup"><span data-stu-id="e8579-107">We make our best effort to respond to issues in a timely fashion.</span></span> <span data-ttu-id="e8579-108">Altre informazioni sulle procedure usate per la classificazione e la risoluzione dei problemi sono disponibili nell'argomento relativo ai [criteri per i problemi](issues-policy.md).</span><span class="sxs-lookup"><span data-stu-id="e8579-108">You can read more about our procedures for classifying and resolving issues in our [Issues policy](issues-policy.md) topic.</span></span>
 
-We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area. If this is your first visit, see our [labels and projects roadmap](styleguide/labels-projects.md) for help navigating the issues and projects in this repository.
+<span data-ttu-id="e8579-109">Sono benvenuti i contributi per contribuire a migliorare e completare i documenti .NET. Si tratta di un repository molto grande che copre un'area di grandi dimensioni.</span><span class="sxs-lookup"><span data-stu-id="e8579-109">We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area.</span></span> <span data-ttu-id="e8579-110">Se si tratta della prima visita, vedere la Guida di orientamento per le [etichette e i progetti](styleguide/labels-projects.md) per esplorare i problemi e i progetti in questo repository.</span><span class="sxs-lookup"><span data-stu-id="e8579-110">If this is your first visit, see our [labels and projects roadmap](styleguide/labels-projects.md) for help navigating the issues and projects in this repository.</span></span>
 
-## Migrate old examples
+## <a name="migrate-old-examples"></a><span data-ttu-id="e8579-111">Eseguire la migrazione degli esempi precedenti</span><span class="sxs-lookup"><span data-stu-id="e8579-111">Migrate old examples</span></span>
 
-If you're interested in helping migrate existing code that targets the .NET Framework (specifically WPF and WinForms) from the [retired Code Gallery](https://docs.microsoft.com/teamblog/msdn-code-gallery-retired) site to .NET Core applications stored in our [samples repository](https://github.com/dotnet/samples) and downloadable from the [Samples Browser](https://docs.microsoft.com/samples/browse), see the [Code Gallery migration](https://github.com/dotnet/docs/projects/88) project. The code gallery samples were moved to the [Microsoft Archive](https://github.com/microsoftarchive?q=msdn-code-gallery) organization.
+<span data-ttu-id="e8579-112">Se si è interessati a contribuire alla migrazione del codice esistente destinato al .NET Framework (in particolare WPF e WinForms) dal sito della [raccolta di codici ritirato](https://docs.microsoft.com/teamblog/msdn-code-gallery-retired) alle applicazioni .NET Core archiviate nel [repository degli esempi](https://github.com/dotnet/samples) e scaricabili dal browser degli [esempi](https://docs.microsoft.com/samples/browse), vedere il progetto di migrazione della [raccolta di codice](https://github.com/dotnet/docs/projects/88) .</span><span class="sxs-lookup"><span data-stu-id="e8579-112">If you're interested in helping migrate existing code that targets the .NET Framework (specifically WPF and WinForms) from the [retired Code Gallery](https://docs.microsoft.com/teamblog/msdn-code-gallery-retired) site to .NET Core applications stored in our [samples repository](https://github.com/dotnet/samples) and downloadable from the [Samples Browser](https://docs.microsoft.com/samples/browse), see the [Code Gallery migration](https://github.com/dotnet/docs/projects/88) project.</span></span> <span data-ttu-id="e8579-113">Gli esempi della raccolta di codice sono stati spostati nell'organizzazione [Microsoft Archive](https://github.com/microsoftarchive?q=msdn-code-gallery) .</span><span class="sxs-lookup"><span data-stu-id="e8579-113">The code gallery samples were moved to the [Microsoft Archive](https://github.com/microsoftarchive?q=msdn-code-gallery) organization.</span></span>
 
-## Code of Conduct
+## <a name="code-of-conduct"></a><span data-ttu-id="e8579-114">Codice di comportamento</span><span class="sxs-lookup"><span data-stu-id="e8579-114">Code of Conduct</span></span>
 
-This project has adopted the code of conduct defined by the Contributor Covenant
-to clarify expected behavior in our community.
+<span data-ttu-id="e8579-115">Per questo progetto è stato adottato il codice di comportamento definito dalla convenzione per i collaboratori per chiarire qual è il comportamento previsto nella community.</span><span class="sxs-lookup"><span data-stu-id="e8579-115">This project has adopted the code of conduct defined by the Contributor Covenant to clarify expected behavior in our community.</span></span>
 
-For more information, see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).
+<span data-ttu-id="e8579-116">Per altre informazioni, vedere il [Codice di comportamento di .NET Foundation](https://dotnetfoundation.org/code-of-conduct).</span><span class="sxs-lookup"><span data-stu-id="e8579-116">For more information, see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).</span></span>
