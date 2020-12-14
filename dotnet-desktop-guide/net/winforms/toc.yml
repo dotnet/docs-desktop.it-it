@@ -1,0 +1,87 @@
+items:
+  - name: Windows Forms per .NET
+    href: index.yml
+  - name: Novità
+    href: whats-new/index.md
+  - name: Introduzione
+    items:
+      - name: Panoramica
+        href: overview/index.md
+      - name: Creare un'app
+        href: get-started/create-app-visual-studio.md
+  - name: Migrazione
+    items:
+      - name: Eseguire la migrazione a .NET 5
+        href: migration/index.md
+  - name: Moduli
+    items:
+      - name: Gestori eventi
+        href: forms/events.md
+      - name: Scalabilità automatica
+        href: forms/autoscale.md
+      - name: Attività comuni
+        items:
+          - name: Aggiungere un modulo
+            href: forms/how-to-add.md
+          - name: Ridimensionare un modulo
+            href: forms/how-to-position-and-resize.md
+          - name: Posizionare un modulo
+            href: forms/how-to-position-and-resize.md#position-with-the-designer
+  - name: Controlli
+    items:
+      - name: Panoramica
+        href: controls/overview.md
+      - name: Opzioni di layout
+        href: controls/layout.md
+      - name: Etichette
+        href: controls/labels.md
+      - name: Controlli personalizzati
+        href: controls/custom.md
+      - name: Disegno personalizzato
+        href: controls/custom-painting-drawing.md
+      - name: Applicare le informazioni di accessibilità
+        href: controls/provide-accessibility-information.md
+      - name: Attività comuni
+        items:
+          - name: Aggiungere un controllo a un modulo
+            href: controls/how-to-add-to-a-form.md
+          - name: Crea tasti di scelta rapida
+            href: controls/how-to-create-access-keys.md
+          - name: Impostare il testo visualizzato da un controllo
+            href: controls/how-to-set-the-display-text.md
+          - name: Impostare l'immagine visualizzata da un controllo
+            href: controls/how-to-add-a-picture-to-a-control.md
+  - name: Input dell’utente - tastiera
+    items:
+      - name: Panoramica
+        href: input-keyboard/overview.md
+      - name: Usare gli eventi della tastiera
+        href: input-keyboard/events.md
+      - name: Convalidare l’input
+        href: input-keyboard/validation.md
+      - name: Attività comuni
+        items:
+          - name: Modificare il tasto premuto
+            href: input-keyboard/how-to-change-key-press.md
+          - name: Determinare quale tasto di modifica è stato premuto
+            href: input-keyboard/how-to-check-modifier-key.md
+          - name: Gestire l'input a livello di modulo
+            href: input-keyboard/how-to-handle-forms.md
+          - name: Simulare gli eventi della tastiera
+            href: input-keyboard/how-to-simulate-events.md
+  - name: Input dell'utente - mouse
+    items:
+      - name: Panoramica
+        href: input-mouse/overview.md
+      - name: Usare gli eventi del mouse
+        href: input-mouse/events.md
+      - name: Funzionalità di trascinamento della selezione
+        href: input-mouse/drag-and-drop.md
+      - name: Attività comuni
+        items:
+          - name: Distinguere tra clic e doppio clic
+            href: input-mouse/how-to-distinguish-between-clicks-and-double-clicks.md
+          - name: Controllare e modificare il puntatore del mouse
+            href: input-mouse/how-to-manage-cursor-pointer.md
+          - name: Simulare gli eventi del mouse
+            href: input-mouse/how-to-simulate-events.md
