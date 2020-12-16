@@ -1,11 +1,11 @@
 ---
-ms.openlocfilehash: 8bcaf8390cb9fe318204ed9fd4a9fe30ba5a68b2
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: c134c3fe572b54525061bda657e22f232a92c3d1
+ms.sourcegitcommit: dd2882e3ca1971d8bae8a5baba9038d336d6f0ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96951582"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97531886"
 ---
 
 > [!IMPORTANT]
-> <span data-ttu-id="5252a-101">La documentazione della Guida per desktop per .NET 5 (e .NET Core) ed è in fase di creazione.</span><span class="sxs-lookup"><span data-stu-id="5252a-101">The Desktop Guide documentation for .NET 5 (and .NET Core) and is under construction.</span></span>
+> <span data-ttu-id="a08de-101">La documentazione della Guida per desktop per .NET 5 (e .NET Core) è in fase di creazione.</span><span class="sxs-lookup"><span data-stu-id="a08de-101">The Desktop Guide documentation for .NET 5 (and .NET Core) is under construction.</span></span>
