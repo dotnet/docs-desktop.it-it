@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Impostare il livello di compressione JPEG'
-description: Informazioni su come regolare la qualità di un'immagine JPEG modificando il livello di compressione in Windows Forms.
+description: Informazioni su come regolare la qualità di un'immagine JPEG modificando il livello di compressione in Windows Form.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,18 +9,18 @@ helpviewer_keywords:
 - images [Windows Forms], changing encoder parameters
 - JPEG images [Windows Forms], setting quality level
 ms.assetid: 4b9a74e3-9504-43c1-9f28-ace651d0772e
-ms.openlocfilehash: 1f6a96e8a05fff40eb08da0ce318faa86a06cc3a
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 20c34bdec1b55a74f7ec005b3948ac123585155d
+ms.sourcegitcommit: 302273bd74509dfbff11126753dd210d80f1bc37
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96962521"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536000"
 ---
-# <a name="how-to-set-jpeg-compression-level"></a><span data-ttu-id="32a84-103">Procedura: Impostare il livello di compressione JPEG</span><span class="sxs-lookup"><span data-stu-id="32a84-103">How to: Set JPEG Compression Level</span></span>
-<span data-ttu-id="32a84-104">Può essere opportuno modificare i parametri di un'immagine quando questa viene salvata sul disco per ridurre le dimensioni del file o migliorarne la qualità.</span><span class="sxs-lookup"><span data-stu-id="32a84-104">You may want to modify the parameters of an image when you save the image to disk to minimize the file size or improve its quality.</span></span> <span data-ttu-id="32a84-105">È possibile regolare la qualità di un'immagine JPEG modificandone il livello di compressione.</span><span class="sxs-lookup"><span data-stu-id="32a84-105">You can adjust the quality of a JPEG image by modifying its compression level.</span></span> <span data-ttu-id="32a84-106">Per specificare il livello di compressione quando si salva un'immagine JPEG, è necessario creare un <xref:System.Drawing.Imaging.EncoderParameters> oggetto e passarlo al <xref:System.Drawing.Image.Save%2A> metodo della <xref:System.Drawing.Image> classe.</span><span class="sxs-lookup"><span data-stu-id="32a84-106">To specify the compression level when you save a JPEG image, you must create an <xref:System.Drawing.Imaging.EncoderParameters> object and pass it to the <xref:System.Drawing.Image.Save%2A> method of the <xref:System.Drawing.Image> class.</span></span> <span data-ttu-id="32a84-107">Inizializzare l' <xref:System.Drawing.Imaging.EncoderParameters> oggetto in modo che disponga di una matrice costituita da un oggetto <xref:System.Drawing.Imaging.EncoderParameter> .</span><span class="sxs-lookup"><span data-stu-id="32a84-107">Initialize the <xref:System.Drawing.Imaging.EncoderParameters> object so that it has an array that consists of one <xref:System.Drawing.Imaging.EncoderParameter>.</span></span> <span data-ttu-id="32a84-108">Quando si crea <xref:System.Drawing.Imaging.EncoderParameter> , specificare il <xref:System.Drawing.Imaging.Encoder.Quality> codificatore e il livello di compressione desiderato.</span><span class="sxs-lookup"><span data-stu-id="32a84-108">When you create the <xref:System.Drawing.Imaging.EncoderParameter>, specify the <xref:System.Drawing.Imaging.Encoder.Quality> encoder, and the desired compression level.</span></span>  
+# <a name="how-to-set-jpeg-compression-level"></a><span data-ttu-id="6bedd-103">Procedura: Impostare il livello di compressione JPEG</span><span class="sxs-lookup"><span data-stu-id="6bedd-103">How to: Set JPEG Compression Level</span></span>
+<span data-ttu-id="6bedd-104">Può essere opportuno modificare i parametri di un'immagine quando questa viene salvata sul disco per ridurre le dimensioni del file o migliorarne la qualità.</span><span class="sxs-lookup"><span data-stu-id="6bedd-104">You may want to modify the parameters of an image when you save the image to disk to minimize the file size or improve its quality.</span></span> <span data-ttu-id="6bedd-105">È possibile regolare la qualità di un'immagine JPEG modificandone il livello di compressione.</span><span class="sxs-lookup"><span data-stu-id="6bedd-105">You can adjust the quality of a JPEG image by modifying its compression level.</span></span> <span data-ttu-id="6bedd-106">Per specificare il livello di compressione quando si salva un'immagine JPEG, è necessario creare un <xref:System.Drawing.Imaging.EncoderParameters> oggetto e passarlo al <xref:System.Drawing.Image.Save%2A> metodo della <xref:System.Drawing.Image> classe.</span><span class="sxs-lookup"><span data-stu-id="6bedd-106">To specify the compression level when you save a JPEG image, you must create an <xref:System.Drawing.Imaging.EncoderParameters> object and pass it to the <xref:System.Drawing.Image.Save%2A> method of the <xref:System.Drawing.Image> class.</span></span> <span data-ttu-id="6bedd-107">Inizializzare l' <xref:System.Drawing.Imaging.EncoderParameters> oggetto in modo che disponga di una matrice costituita da un oggetto <xref:System.Drawing.Imaging.EncoderParameter> .</span><span class="sxs-lookup"><span data-stu-id="6bedd-107">Initialize the <xref:System.Drawing.Imaging.EncoderParameters> object so that it has an array that consists of one <xref:System.Drawing.Imaging.EncoderParameter>.</span></span> <span data-ttu-id="6bedd-108">Quando si crea <xref:System.Drawing.Imaging.EncoderParameter> , specificare il <xref:System.Drawing.Imaging.Encoder.Quality> codificatore e il livello di compressione desiderato.</span><span class="sxs-lookup"><span data-stu-id="6bedd-108">When you create the <xref:System.Drawing.Imaging.EncoderParameter>, specify the <xref:System.Drawing.Imaging.Encoder.Quality> encoder, and the desired compression level.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="32a84-109">Esempio</span><span class="sxs-lookup"><span data-stu-id="32a84-109">Example</span></span>  
- <span data-ttu-id="32a84-110">Il codice di esempio seguente crea un <xref:System.Drawing.Imaging.EncoderParameter> oggetto e salva tre immagini JPEG.</span><span class="sxs-lookup"><span data-stu-id="32a84-110">The following example code creates an <xref:System.Drawing.Imaging.EncoderParameter> object and saves three JPEG images.</span></span> <span data-ttu-id="32a84-111">Ogni immagine JPEG viene salvata con un livello di qualità diverso, modificando il `long` valore passato al <xref:System.Drawing.Imaging.EncoderParameter> costruttore.</span><span class="sxs-lookup"><span data-stu-id="32a84-111">Each JPEG image is saved with a different quality level, by modifying the `long` value passed to the <xref:System.Drawing.Imaging.EncoderParameter> constructor.</span></span> <span data-ttu-id="32a84-112">Un livello di qualità pari a 0 corrisponde alla compressione massima, mentre un livello di qualità pari a 100 corrisponde alla compressione minima.</span><span class="sxs-lookup"><span data-stu-id="32a84-112">A quality level of 0 corresponds to the greatest compression, and a quality level of 100 corresponds to the least compression.</span></span>  
+## <a name="example"></a><span data-ttu-id="6bedd-109">Esempio</span><span class="sxs-lookup"><span data-stu-id="6bedd-109">Example</span></span>  
+ <span data-ttu-id="6bedd-110">Il codice di esempio seguente crea un <xref:System.Drawing.Imaging.EncoderParameter> oggetto e salva tre immagini JPEG.</span><span class="sxs-lookup"><span data-stu-id="6bedd-110">The following example code creates an <xref:System.Drawing.Imaging.EncoderParameter> object and saves three JPEG images.</span></span> <span data-ttu-id="6bedd-111">Ogni immagine JPEG viene salvata con un livello di qualità diverso, modificando il `long` valore passato al <xref:System.Drawing.Imaging.EncoderParameter> costruttore.</span><span class="sxs-lookup"><span data-stu-id="6bedd-111">Each JPEG image is saved with a different quality level, by modifying the `long` value passed to the <xref:System.Drawing.Imaging.EncoderParameter> constructor.</span></span> <span data-ttu-id="6bedd-112">Un livello di qualità pari a 0 corrisponde alla compressione massima, mentre un livello di qualità pari a 100 corrisponde alla compressione minima.</span><span class="sxs-lookup"><span data-stu-id="6bedd-112">A quality level of 0 corresponds to the greatest compression, and a quality level of 100 corresponds to the least compression.</span></span>  
   
 ```csharp  
 private void VaryQualityLevel()  
@@ -94,7 +94,7 @@ End Sub
 ```csharp  
 private ImageCodecInfo GetEncoder(ImageFormat format)  
 {  
-    ImageCodecInfo[] codecs = ImageCodecInfo.GetImageDecoders();  
+    ImageCodecInfo[] codecs = ImageCodecInfo.GetImageEncoders();  
     foreach (ImageCodecInfo codec in codecs)  
     {  
         if (codec.FormatID == format.Guid)  
@@ -109,7 +109,7 @@ private ImageCodecInfo GetEncoder(ImageFormat format)
 ```vb  
 Private Function GetEncoder(ByVal format As ImageFormat) As ImageCodecInfo  
   
-    Dim codecs As ImageCodecInfo() = ImageCodecInfo.GetImageDecoders()  
+    Dim codecs As ImageCodecInfo() = ImageCodecInfo.GetImageEncoders()  
     Dim codec As ImageCodecInfo  
     For Each codec In codecs  
         If codec.FormatID = format.Guid Then  
@@ -121,17 +121,17 @@ Private Function GetEncoder(ByVal format As ImageFormat) As ImageCodecInfo
 End Function  
 ```  
   
-## <a name="compiling-the-code"></a><span data-ttu-id="32a84-113">Compilazione del codice</span><span class="sxs-lookup"><span data-stu-id="32a84-113">Compiling the Code</span></span>  
- <span data-ttu-id="32a84-114">L'esempio presenta i requisiti seguenti:</span><span class="sxs-lookup"><span data-stu-id="32a84-114">This example requires:</span></span>  
+## <a name="compiling-the-code"></a><span data-ttu-id="6bedd-113">Compilazione del codice</span><span class="sxs-lookup"><span data-stu-id="6bedd-113">Compiling the Code</span></span>  
+ <span data-ttu-id="6bedd-114">L'esempio presenta i requisiti seguenti:</span><span class="sxs-lookup"><span data-stu-id="6bedd-114">This example requires:</span></span>  
   
-- <span data-ttu-id="32a84-115">Applicazione Windows Forms.</span><span class="sxs-lookup"><span data-stu-id="32a84-115">A Windows Forms application.</span></span>  
+- <span data-ttu-id="6bedd-115">Applicazione Windows Forms.</span><span class="sxs-lookup"><span data-stu-id="6bedd-115">A Windows Forms application.</span></span>  
   
-- <span data-ttu-id="32a84-116">Oggetto <xref:System.Windows.Forms.PaintEventArgs> , che è un parametro di <xref:System.Windows.Forms.PaintEventHandler> .</span><span class="sxs-lookup"><span data-stu-id="32a84-116">A <xref:System.Windows.Forms.PaintEventArgs>, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.</span></span>  
+- <span data-ttu-id="6bedd-116">Oggetto <xref:System.Windows.Forms.PaintEventArgs> , che è un parametro di <xref:System.Windows.Forms.PaintEventHandler> .</span><span class="sxs-lookup"><span data-stu-id="6bedd-116">A <xref:System.Windows.Forms.PaintEventArgs>, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.</span></span>  
   
-- <span data-ttu-id="32a84-117">File di immagine denominato `TestPhoto.jpg` e archiviato in **c:\\**.</span><span class="sxs-lookup"><span data-stu-id="32a84-117">An image file that is named `TestPhoto.jpg` and located at **c:\\**.</span></span>  
+- <span data-ttu-id="6bedd-117">File di immagine denominato `TestPhoto.jpg` e archiviato in **c:\\**.</span><span class="sxs-lookup"><span data-stu-id="6bedd-117">An image file that is named `TestPhoto.jpg` and located at **c:\\**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="32a84-118">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="32a84-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6bedd-118">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="6bedd-118">See also</span></span>
 
-- [<span data-ttu-id="32a84-119">Procedura: Determinare i parametri supportati da un codificatore</span><span class="sxs-lookup"><span data-stu-id="32a84-119">How to: Determine the Parameters Supported by an Encoder</span></span>](how-to-determine-the-parameters-supported-by-an-encoder.md)
-- [<span data-ttu-id="32a84-120">Tipi di bitmap</span><span class="sxs-lookup"><span data-stu-id="32a84-120">Types of Bitmaps</span></span>](types-of-bitmaps.md)
-- [<span data-ttu-id="32a84-121">Utilizzo di codificatori e decodificatori di immagini nel codice gestito GDI+</span><span class="sxs-lookup"><span data-stu-id="32a84-121">Using Image Encoders and Decoders in Managed GDI+</span></span>](using-image-encoders-and-decoders-in-managed-gdi.md)
+- [<span data-ttu-id="6bedd-119">Procedura: Determinare i parametri supportati da un codificatore</span><span class="sxs-lookup"><span data-stu-id="6bedd-119">How to: Determine the Parameters Supported by an Encoder</span></span>](how-to-determine-the-parameters-supported-by-an-encoder.md)
+- [<span data-ttu-id="6bedd-120">Tipi di bitmap</span><span class="sxs-lookup"><span data-stu-id="6bedd-120">Types of Bitmaps</span></span>](types-of-bitmaps.md)
+- [<span data-ttu-id="6bedd-121">Utilizzo di codificatori e decodificatori di immagini nel codice gestito GDI+</span><span class="sxs-lookup"><span data-stu-id="6bedd-121">Using Image Encoders and Decoders in Managed GDI+</span></span>](using-image-encoders-and-decoders-in-managed-gdi.md)
