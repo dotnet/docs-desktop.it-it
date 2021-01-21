@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Impostare il livello di compressione JPEG'
-description: Informazioni su come regolare la qualità di un'immagine JPEG modificando il livello di compressione in Windows Forms.
+description: Informazioni su come regolare la qualità di un'immagine JPEG modificando il livello di compressione in Windows Form.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - images [Windows Forms], changing encoder parameters
 - JPEG images [Windows Forms], setting quality level
 ms.assetid: 4b9a74e3-9504-43c1-9f28-ace651d0772e
-ms.openlocfilehash: 1f6a96e8a05fff40eb08da0ce318faa86a06cc3a
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 20c34bdec1b55a74f7ec005b3948ac123585155d
+ms.sourcegitcommit: 302273bd74509dfbff11126753dd210d80f1bc37
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96962521"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536000"
 ---
 # <a name="how-to-set-jpeg-compression-level"></a>Procedura: Impostare il livello di compressione JPEG
 Può essere opportuno modificare i parametri di un'immagine quando questa viene salvata sul disco per ridurre le dimensioni del file o migliorarne la qualità. È possibile regolare la qualità di un'immagine JPEG modificandone il livello di compressione. Per specificare il livello di compressione quando si salva un'immagine JPEG, è necessario creare un <xref:System.Drawing.Imaging.EncoderParameters> oggetto e passarlo al <xref:System.Drawing.Image.Save%2A> metodo della <xref:System.Drawing.Image> classe. Inizializzare l' <xref:System.Drawing.Imaging.EncoderParameters> oggetto in modo che disponga di una matrice costituita da un oggetto <xref:System.Drawing.Imaging.EncoderParameter> . Quando si crea <xref:System.Drawing.Imaging.EncoderParameter> , specificare il <xref:System.Drawing.Imaging.Encoder.Quality> codificatore e il livello di compressione desiderato.  
@@ -94,7 +94,7 @@ End Sub
 ```csharp  
 private ImageCodecInfo GetEncoder(ImageFormat format)  
 {  
-    ImageCodecInfo[] codecs = ImageCodecInfo.GetImageDecoders();  
+    ImageCodecInfo[] codecs = ImageCodecInfo.GetImageEncoders();  
     foreach (ImageCodecInfo codec in codecs)  
     {  
         if (codec.FormatID == format.Guid)  
@@ -109,7 +109,7 @@ private ImageCodecInfo GetEncoder(ImageFormat format)
 ```vb  
 Private Function GetEncoder(ByVal format As ImageFormat) As ImageCodecInfo  
   
-    Dim codecs As ImageCodecInfo() = ImageCodecInfo.GetImageDecoders()  
+    Dim codecs As ImageCodecInfo() = ImageCodecInfo.GetImageEncoders()  
     Dim codec As ImageCodecInfo  
     For Each codec In codecs  
         If codec.FormatID = format.Guid Then  
@@ -130,7 +130,7 @@ End Function
   
 - File di immagine denominato `TestPhoto.jpg` e archiviato in **c:\\**.  
   
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Determinare i parametri supportati da un codificatore](how-to-determine-the-parameters-supported-by-an-encoder.md)
 - [Tipi di bitmap](types-of-bitmaps.md)

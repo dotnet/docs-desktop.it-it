@@ -8,12 +8,12 @@ ms.topic: overview
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 73a8307950d55d51fa67be97918c83cd9013ce70
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: d441ad76fa684f3a99b1d1404bd02640402693f0
+ms.sourcegitcommit: 7e271d44c89687f0a96a249a9f658a2e6c067957
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96969991"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98570460"
 ---
 # <a name="data-binding-overview-wpf-net"></a>Cenni preliminari sull'associazione dati (WPF .NET)
 
@@ -94,7 +94,7 @@ In questa figura vengono illustrati i diversi tipi di flusso di dati:
 
 - <xref:System.Windows.Data.BindingMode.OneWay> l'associazione determina l'aggiornamento automatico della proprietà di destinazione delle modifiche apportate alla proprietà di origine, ma le modifiche apportate alla proprietà di destinazione non vengono propagate alla proprietà di origine. Questo tipo di binding è appropriato se il controllo da associare è implicitamente di sola lettura. Ad esempio, è possibile eseguire l'associazione a un'origine, ad esempio un titolo di borsa, oppure la proprietà di destinazione non dispone di un'interfaccia di controllo fornita per apportare modifiche, ad esempio un colore di sfondo associato a dati di una tabella. Se non è necessario monitorare le modifiche delle proprietà di destinazione, l'uso della modalità di associazione <xref:System.Windows.Data.BindingMode.OneWay> consente di evitare il sovraccarico della modalità di binding <xref:System.Windows.Data.BindingMode.TwoWay>.
 
-- <xref:System.Windows.Data.BindingMode.TwoWay> l'associazione causa modifiche alla proprietà di origine o alla proprietà di destinazione per aggiornare automaticamente l'altra. Questo tipo di associazione è adatto ai moduli modificabili o ad altri scenari di interfaccia utente completamente interattivi. Per impostazione predefinita, la maggior parte delle proprietà è <xref:System.Windows.Data.BindingMode.OneWay> vincolante, ma alcune proprietà di dipendenza, in genere le proprietà dei controlli modificabili dall'utente, ad esempio <xref:System.Windows.Controls.TextBox.Text?displayProperty=nameWithType> e  [CheckBox. Unchecked](xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked) default to <xref:System.Windows.Data.BindingMode.TwoWay> Binding. Un modo programmatico per determinare se una proprietà di dipendenza esegue l'associazione unidirezionale o bidirezionale per impostazione predefinita consiste nell'ottenere i metadati della proprietà con <xref:System.Windows.DependencyProperty.GetMetadata%2A?displayProperty=nameWithType> e quindi controllare il valore booleano della <xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A?displayProperty=nameWithType> Proprietà.
+- <xref:System.Windows.Data.BindingMode.TwoWay> l'associazione causa modifiche alla proprietà di origine o alla proprietà di destinazione per aggiornare automaticamente l'altra. Questo tipo di associazione è adatto ai moduli modificabili o ad altri scenari di interfaccia utente completamente interattivi. Per impostazione predefinita, la maggior parte delle proprietà è <xref:System.Windows.Data.BindingMode.OneWay> vincolante, ma alcune proprietà di dipendenza, in genere le proprietà dei controlli modificabili dall'utente, ad esempio <xref:System.Windows.Controls.TextBox.Text?displayProperty=nameWithType> e  [CheckBox. Checkin](xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked), usano per impostazione predefinita l' <xref:System.Windows.Data.BindingMode.TwoWay> associazione. Un modo programmatico per determinare se una proprietà di dipendenza esegue l'associazione unidirezionale o bidirezionale per impostazione predefinita consiste nell'ottenere i metadati della proprietà con <xref:System.Windows.DependencyProperty.GetMetadata%2A?displayProperty=nameWithType> e quindi controllare il valore booleano della <xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A?displayProperty=nameWithType> Proprietà.
 
 - <xref:System.Windows.Data.BindingMode.OneWayToSource> è il contrario dell' <xref:System.Windows.Data.BindingMode.OneWay> associazione; aggiorna la proprietà di origine quando viene modificata la proprietà di destinazione. Uno scenario di esempio è se è necessario rivalutare solo il valore di origine dall'interfaccia utente.
 
@@ -439,7 +439,7 @@ Se al binding è associato un oggetto o se la <xref:System.Windows.Controls.Exce
 
 È possibile impostare la proprietà associata <xref:System.Diagnostics.PresentationTraceSources.TraceLevel%2A?displayProperty=nameWithType> su un oggetto correlato all'associazione per ricevere informazioni sullo stato di un'associazione specifica.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Controls.DataErrorValidationRule>
 - [Eseguire l'associazione ai risultati di una query LINQ](../../../framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)

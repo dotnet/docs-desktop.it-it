@@ -10,12 +10,12 @@ helpviewer_keywords:
 - resource dictionaries [WPF], application-scope
 - application-scope resource dictionaries
 ms.assetid: 53857682-bd2c-4f2c-8f25-1307d0b451a2
-ms.openlocfilehash: 7423cf03e5ebb94eb9ad5f3a0ee0bd5e524cccba
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 0d9c4f851c5ee03bf60dbdadc31d9fc4c6536746
+ms.sourcegitcommit: 302273bd74509dfbff11126753dd210d80f1bc37
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96952541"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98535989"
 ---
 # <a name="how-to-use-an-application-scope-resource-dictionary"></a>Procedura: utilizzare un dizionario risorse relativo all'ambito dell'applicazione
 
@@ -43,8 +43,10 @@ Questo esempio illustra come definire e usare un dizionario risorse personalizza
  [!code-vb[HOWTOResourceDictionaries#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HowToResourceDictionaries/VB/MainWindow.xaml.vb#3)]  
   
  Quando si usa, è necessario tenere presenti due considerazioni <xref:System.Windows.Application.Resources%2A> . In primo luogo, la *chiave* del dizionario è un oggetto, pertanto è necessario usare esattamente la stessa istanza dell'oggetto quando si imposta e si recupera un valore della proprietà. Si noti che la chiave fa distinzione tra maiuscole e minuscole quando si usa una stringa. In secondo luogo, il *valore* del dizionario è un oggetto, pertanto è necessario convertire il valore nel tipo desiderato quando si recupera un valore della proprietà.  
-  
-## <a name="see-also"></a>Vedere anche
+
+Alcuni tipi di risorse possono usare automaticamente una proprietà definita dal tipo come chiave esplicita, ad esempio i <xref:System.Windows.Style> <xref:System.Windows.DataTemplate> tipi e. Questo può sostituire il `x:Key` valore. Per garantire che la `x:Key` chiave venga rispettata, dichiararla prima della proprietà della chiave esplicita. Per altre informazioni, vedere [stili, DataTemplate e chiavi implicite](../advanced/xaml-resources-define.md#styles-datatemplates-and-implicit-keys).
+
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.ResourceDictionary>
 - <xref:System.Windows.Application.Resources%2A>

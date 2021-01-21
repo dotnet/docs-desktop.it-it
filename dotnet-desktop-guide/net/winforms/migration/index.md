@@ -1,18 +1,18 @@
 ---
-title: Eseguire la migrazione di un'app Windows Forms a .NET 5
+title: Eseguire la migrazione di un'app Windows Form a .NET 5
 description: Informazioni su come trasferire un .NET Framework Windows Forms Application a .NET 5.
 ms.date: 11/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 105c209fc567d2cce70b01267f793152d8140cb8
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 84d12aeb376091aca2f10a750aff6f2fb3471d6f
+ms.sourcegitcommit: cf26656c126a55cfbfc06e2a89fe01c2b8df2b27
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96966013"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97697421"
 ---
-# <a name="how-to-migrate-a-windows-forms-desktop-app-to-net-5"></a>Come eseguire la migrazione di un'app desktop Windows Forms a .NET 5
+# <a name="how-to-migrate-a-windows-forms-desktop-app-to-net-5"></a>Come eseguire la migrazione di un'app desktop Windows Form a .NET 5
 
-Questo articolo descrive come eseguire la migrazione di un'app desktop Windows Forms da .NET Framework a .NET 5 o versione successiva. .NET SDK include il supporto per applicazioni Windows Forms. Windows Forms è ancora un framework solo per Windows e supporta l'esecuzione solo in Windows.
+Questo articolo descrive come eseguire la migrazione di un'app desktop Windows Form da .NET Framework a .NET 5 o versione successiva. .NET SDK include il supporto per applicazioni Windows Form. Windows Forms è ancora un framework solo per Windows e supporta l'esecuzione solo in Windows.
 
 La migrazione dell'app da .NET Framework a .NET 5 richiede in genere un nuovo file di progetto. .NET 5 USA i file di progetto in stile SDK mentre .NET Framework in genere usa il file di progetto di Visual Studio meno recente. Se si è mai aperto un file di progetto di Visual Studio in un editor di testo, è possibile verificare il livello di dettaglio. I progetti in stile SDK sono più piccoli e non richiedono il numero di voci del formato di file di progetto precedente.
 
@@ -28,7 +28,7 @@ Per altre informazioni su .NET 5, vedere [Introduzione a .NET](/dotnet/core/intr
 
 - Anteprima di progettazione Windows Form in Visual Studio.
 
-  Per abilitare la finestra di progettazione, passare a **strumenti**  >  **Opzioni**  >  **ambiente**  >  **Anteprima funzionalità** e selezionare l'opzione **usare l'anteprima Windows Forms finestra di progettazione per le app .NET Core** .
+  Per abilitare la finestra di progettazione, passare a **strumenti**  >  **Opzioni**  >  **ambiente**  >  **Anteprima funzionalità** e selezionare l'opzione **usare l'anteprima Windows form finestra di progettazione per le app .NET Core** .
 
 - Questo articolo usa l'app di esempio del [gioco corrispondente](https://github.com/dotnet/samples/tree/master/windowsforms/matching-game/net45/) . Se si vuole seguire la procedura, scaricare e aprire l'applicazione in Visual Studio. In caso contrario, usare la propria app.
 
@@ -42,11 +42,11 @@ Quando si esegue la migrazione di un .NET Framework Windows Forms Application, �
 
 01. Si usa una versione diversa di Windows Forms.
 
-    Quando è stato rilasciato .NET Core 3,0, Windows Forms è [disponibile in GitHub](https://github.com/dotnet/winforms). Il codice per Windows Forms per .NET 5 è un fork della .NET Framework Windows Forms codebase. È possibile che esistano alcune differenze e che l'app sarà difficile da migrare.
+    Quando è stato rilasciato .NET Core 3,0, Windows Form è [disponibile in GitHub](https://github.com/dotnet/winforms). Il codice per Windows Form per .NET 5 è un fork della .NET Framework Windows Form codebase. È possibile che esistano alcune differenze e che l'app sarà difficile da migrare.
 
 01. [Windows Compatibility Pack][compat-pack] può essere utile per la migrazione.
 
-    Alcune API disponibili in .NET Framework non sono disponibili in .NET 5. [Windows Compatibility Pack][compat-pack] aggiunge molte di queste API e può aiutare l'app Windows Forms a diventare compatibile con .NET 5.
+    Alcune API disponibili in .NET Framework non sono disponibili in .NET 5. [Windows Compatibility Pack][compat-pack] aggiunge molte di queste API e può aiutare l'app Windows Form a diventare compatibile con .NET 5.
 
 01. Aggiornare i pacchetti NuGet usati dal progetto.
 
@@ -159,11 +159,13 @@ Questo codice XML fornisce la struttura di base del progetto. Tuttavia, non cont
 
 ### <a name="resources-and-settings"></a>Risorse e impostazioni
 
-I progetti Windows Forms per .NET Framework includono in genere altri file, ad esempio *Proprietà/impostazioni. Settings* e *Properties/resources. resx*. È necessario eseguire la migrazione di questi file e di qualsiasi file *resx* creato per l'app oltre ai file *resx* di form.
+Una cosa da notare sulla differenza tra i progetti .NET Framework e i progetti in stile SDK usati da .NET 5 è che i progetti .NET Framework usano un modello di consenso esplicito per i file di codice. Tutti i file di codice che si desidera compilare devono essere definiti in modo esplicito nel file di progetto. I progetti in stile SDK sono inversi. per impostazione predefinita, il comportamento non è esplicito: tutti i file di codice che iniziano dalla directory del progetto e di seguito vengono automaticamente inclusi nel progetto. Non è necessario eseguire la migrazione di queste voci se sono semplici e senza impostazioni. Questo è lo stesso per altri file comuni, ad esempio _resx_.
+
+I progetti Windows Form includono anche file specifici del progetto Windows Form, ad esempio _properties/Settings. Settings_ e _Properties/resources. resx_. Potrebbe essere necessario eseguire la migrazione di questi file, che vengono dichiarati nel progetto originale.
 
 Copiare le voci dal file di progetto precedente in un `<ItemGroup>` elemento del nuovo progetto. Dopo aver copiato le voci, modificare qualsiasi `<Compile Include="value">` `<EmbeddedResource Include="value">` elemento o in modo da usare invece `Update` di `Include` .
 
-- Importare la configurazione per il file *Settings. Settings* . Si noti che `Include` è stato modificato in nell' `Update` `<Compile>` elemento:
+- Importare la configurazione per il file _Settings. Settings_ . Si noti che l' `<Compile>` attributo della voce `Update` è stato modificato da `Include` a `Update` perché i file di codice sono già inclusi:
 
   ```xml
   <ItemGroup>
@@ -179,14 +181,16 @@ Copiare le voci dal file di progetto precedente in un `<ItemGroup>` elemento del
   </ItemGroup>
   ```
 
+  Si noti che la voce _Properties\Settings.Settings_ è rimasta `Include` . Il progetto non include automaticamente i file di _Impostazioni_ .
+
   > [!IMPORTANT]
-  > I progetti **Visual Basic** usano in genere la cartella *My Project* mentre i progetti C# usano in genere le *proprietà* della cartella per il file di impostazioni del progetto predefinito.
+  > I progetti **Visual Basic** usano in genere la cartella _My Project_ mentre i progetti C# usano in genere le _proprietà_ della cartella per il file di impostazioni del progetto predefinito.
   
-- Importare la configurazione per qualsiasi file *resx* , ad esempio il file *Properties/resources. resx* . Si noti che `Include` è stato modificato in `Update` in entrambi `<Compile>` gli `<EmbeddedResource>` elementi e ed `<SubType>` è stato rimosso da `<EmbeddedResource>` :
+- Importare la configurazione per qualsiasi file _resx_ , ad esempio il file _Properties/resources. resx_ . Si noti che `Include` è stato modificato in `Update` in entrambi `<Compile>` gli `<EmbeddedResource>` elementi e ed `<SubType>` è stato rimosso da `<EmbeddedResource>` :
 
   ```xml
   <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
+    <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -199,17 +203,17 @@ Copiare le voci dal file di progetto precedente in un `<ItemGroup>` elemento del
   ```
 
   > [!IMPORTANT]
-  > I progetti **Visual Basic** usano in genere la cartella *My Project* mentre i progetti C# usano in genere le *proprietà* della cartella per il file di risorse del progetto predefinito.
+  > I progetti **Visual Basic** usano in genere la cartella _My Project_ mentre i progetti C# usano in genere le _proprietà_ della cartella per il file di risorse del progetto predefinito.
 
 ### <a name="visual-basic"></a>Visual Basic
 
 I progetti di linguaggio Visual Basic richiedono una configurazione aggiuntiva.
 
-01. Importare il file di configurazione *Project\Application.myapp* l'impostazione. Si noti che `<None>` gli `<Compile>` elementi e utilizzano l' `Update` attributo anziché l' `Include` attributo.
+01. Importare il file di configurazione _Project\Application.myapp_ l'impostazione. Si noti che l' `<Compile>` elemento utilizza l' `Update` attributo anziché l' `Include` attributo.
 
     ```xml
     <ItemGroup>
-      <None Update="My Project\Application.myapp">
+      <None Include="My Project\Application.myapp">
         <Generator>MyApplicationCodeGenerator</Generator>
         <LastGenOutput>Application.Designer.vb</LastGenOutput>
       </None>
@@ -288,7 +292,7 @@ Dopo aver convertito un progetto nel nuovo formato di tipo SDK, ricaricare il pr
 
 ## <a name="edit-appconfig"></a>Modifica App.config
 
-Se l'app contiene un file di *App.config* , rimuovere l' `<supportedRuntime>` elemento:
+Se l'app contiene un file di _App.config_ , rimuovere l' `<supportedRuntime>` elemento:
 
 ```xml
 <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
@@ -319,7 +323,7 @@ Al termine della migrazione dell'app, eseguirne il test.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- Informazioni sulle [modifiche di rilievo in Windows Forms](/dotnet/core/compatibility/winforms).
+- Informazioni sulle [modifiche di rilievo in Windows Form](/dotnet/core/compatibility/winforms).
 - Vedere altre informazioni su [Windows Compatibility Pack][compat-pack].
 
 [compat-pack]: /dotnet/core/porting/windows-compat-pack
