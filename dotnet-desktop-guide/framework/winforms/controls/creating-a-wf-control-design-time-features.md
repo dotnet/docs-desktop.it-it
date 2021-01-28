@@ -1,6 +1,6 @@
 ---
 title: Creare un controllo che sfrutti i vantaggi delle funzionalità di Visual Studio Design-Time
-description: Informazioni su come creare una finestra di progettazione personalizzata per un controllo personalizzato in Windows Forms che sfrutta le funzionalità della fase di progettazione.
+description: Informazioni su come creare una finestra di progettazione personalizzata per un controllo personalizzato in Windows Form che sfrutta le funzionalità della fase di progettazione.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,15 +11,12 @@ helpviewer_keywords:
 - DocumentDesigner class [Windows Forms]
 - walkthroughs [Windows Forms], controls
 ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 708871de391824bceec67fe57a35873ccc967adb
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: b58a466e026d06d795134f3930f7259972cb39b9
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96951139"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957461"
 ---
 # <a name="walkthrough-create-a-control-that-takes-advantage-of-design-time-features"></a>Procedura dettagliata: creare un controllo che sfrutti le funzionalità della fase di progettazione
 
@@ -29,13 +26,13 @@ Questo articolo illustra come creare una finestra di progettazione personalizzat
 
 Il `MarqueeControl` tipo implementa una visualizzazione simile a un Marquee del teatro con luci animate e testo lampeggiante.
 
-La finestra di progettazione per questo controllo interagisce con l'ambiente di progettazione per offrire un'esperienza di progettazione personalizzata. Con la finestra di progettazione personalizzata è possibile assemblare un' `MarqueeControl` implementazione personalizzata con luci animate e testo lampeggiante in molte combinazioni. È possibile utilizzare il controllo assemblato in un form come qualsiasi altro controllo Windows Forms.
+La finestra di progettazione per questo controllo interagisce con l'ambiente di progettazione per offrire un'esperienza di progettazione personalizzata. Con la finestra di progettazione personalizzata è possibile assemblare un' `MarqueeControl` implementazione personalizzata con luci animate e testo lampeggiante in molte combinazioni. È possibile utilizzare il controllo assemblato in un form come qualsiasi altro controllo Windows Form.
 
 Al termine di questa procedura dettagliata, il controllo personalizzato sarà simile al seguente:
 
 ![L'app che visualizza un testo che pronuncia testo e un pulsante di avvio e di arresto.](./media/creating-a-wf-control-design-time-features/demo-marquee-control.gif)
 
-Per il listato di codice completo, vedere [procedura: creare un controllo Windows Forms che sfrutta i vantaggi delle funzionalità di Design-Time](/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
+Per il listato di codice completo, vedere [procedura: creare un controllo Windows Form che sfrutta i vantaggi delle funzionalità di Design-Time](/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -45,11 +42,11 @@ Per completare questa procedura dettagliata, è necessario Visual Studio.
 
 Il primo passaggio consiste nel creare il progetto dell'applicazione. Questo progetto verrà usato per compilare l'applicazione che ospita il controllo personalizzato.
 
-In Visual Studio creare un nuovo progetto di applicazione Windows Forms e denominarlo **MarqueeControlTest**.
+In Visual Studio creare un nuovo progetto di applicazione Windows Form e denominarlo **MarqueeControlTest**.
 
 ## <a name="create-the-control-library-project"></a>Creare il progetto di libreria di controlli
 
-1. Aggiungere un progetto libreria di controlli Windows Forms alla soluzione. Denominare il progetto **MarqueeControlLibrary**.
+1. Aggiungere un progetto libreria di controlli Windows Form alla soluzione. Denominare il progetto **MarqueeControlLibrary**.
 
 2. Utilizzando **Esplora soluzioni**, eliminare il controllo predefinito del progetto eliminando il file di origine denominato "UserControl1.cs" o "UserControl1. vb", a seconda del linguaggio scelto.
 
@@ -131,7 +128,7 @@ Il controllo viene associato alla relativa finestra di progettazione tramite la 
 
 ## <a name="set-up-the-project-for-design-time-debugging"></a>Configurare il progetto per il debug di Design-Time
 
-Quando si sviluppa un'esperienza della fase di progettazione personalizzata, sarà necessario eseguire il debug dei controlli e dei componenti. Esiste un modo semplice per configurare il progetto per consentire il debug in fase di progettazione. Per ulteriori informazioni, vedere [procedura dettagliata: debug di controlli di Windows Forms personalizzati in fase di progettazione](walkthrough-debugging-custom-windows-forms-controls-at-design-time.md).
+Quando si sviluppa un'esperienza della fase di progettazione personalizzata, sarà necessario eseguire il debug dei controlli e dei componenti. Esiste un modo semplice per configurare il progetto per consentire il debug in fase di progettazione. Per ulteriori informazioni, vedere [procedura dettagliata: debug di controlli di Windows Form personalizzati in fase di progettazione](walkthrough-debugging-custom-windows-forms-controls-at-design-time.md).
 
 1. Fare clic con il pulsante destro del mouse sul `MarqueeControlLibrary` progetto e scegliere **Proprietà**.
 

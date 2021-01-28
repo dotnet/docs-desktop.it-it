@@ -7,17 +7,14 @@ helpviewer_keywords:
 - SnapLine class [Windows Forms], walkthroughs
 - Windows Forms controls, arranging
 ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 0b68a70b55cbf03d480fd388a637a4caf78b6eaa
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: b916fd83ed35e16864366ba899c9dc9ab4e0624d
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96965845"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957227"
 ---
-# <a name="walkthrough-arrange-controls-on-windows-forms-using-snaplines"></a>Procedura dettagliata: disporre i controlli sui Windows Forms usando le guide di allineamento
+# <a name="walkthrough-arrange-controls-on-windows-forms-using-snaplines"></a>Procedura dettagliata: disporre i controlli sui Windows Form usando le guide di allineamento
 
 Per molte applicazioni è estremamente importante la sistemazione precisa dei controlli nel form. Il Progettazione Windows Form fornisce molti strumenti di layout a questo scopo. Uno dei più importanti è la <xref:System.Windows.Forms.Design.Behavior.SnapLine> funzionalità.
 
@@ -64,7 +61,7 @@ Le guide di allineamento consentono di allineare i controlli ai margini dei modu
    > [!NOTE]
    > Se la proprietà del form è impostata su 0, 0, 0, 0 <xref:System.Windows.Forms.Control.Padding%2A> , il progettazione Windows Form fornisce al form un valore ombreggiato <xref:System.Windows.Forms.Control.Padding%2A> pari a 9, 9, 9, 9. Per eseguire l'override di questo comportamento, assegnare un valore diverso da 0, 0, 0, 0.
 
-2. Modificare il valore della <xref:System.Windows.Forms.Button> proprietà del controllo <xref:System.Windows.Forms.Control.Margin%2A> espandendo la <xref:System.Windows.Forms.Control.Margin%2A> voce nella finestra **Proprietà** e impostando la <xref:System.Windows.Forms.Padding.All%2A> proprietà su 0. Per informazioni dettagliate, vedere [procedura dettagliata: layout Windows Forms controlli con spaziatura interna, margini e proprietà AutoSize](windows-forms-controls-padding-autosize.md).
+2. Modificare il valore della <xref:System.Windows.Forms.Button> proprietà del controllo <xref:System.Windows.Forms.Control.Margin%2A> espandendo la <xref:System.Windows.Forms.Control.Margin%2A> voce nella finestra **Proprietà** e impostando la <xref:System.Windows.Forms.Padding.All%2A> proprietà su 0. Per informazioni dettagliate, vedere [procedura dettagliata: layout Windows Form controlli con spaziatura interna, margini e proprietà AutoSize](windows-forms-controls-padding-autosize.md).
 
 3. Spostare il <xref:System.Windows.Forms.Button> controllo vicino al bordo destro del form finché non viene visualizzata una guide di allineamento. Questa distanza è ora fornita dal valore della proprietà del form <xref:System.Windows.Forms.Control.Padding%2A> .
 
@@ -116,7 +113,7 @@ Le guide di allineamento consentono di allineare i controlli ai margini dei modu
 
 1. Trascinare un controllo <xref:System.Windows.Forms.Button> dalla **Casella degli strumenti** al form.
 
-2. Ridimensionare il <xref:System.Windows.Forms.Button> controllo afferrando uno degli handle di ridimensionamento dell'angolo e il trascinamento. Per informazioni dettagliate, vedere [procedura: ridimensionare i controlli in Windows Forms](how-to-resize-controls-on-windows-forms.md).
+2. Ridimensionare il <xref:System.Windows.Forms.Button> controllo afferrando uno degli handle di ridimensionamento dell'angolo e il trascinamento. Per informazioni dettagliate, vedere [procedura: ridimensionare i controlli in Windows Form](how-to-resize-controls-on-windows-forms.md).
 
 3. Trascinare il quadratino di ridimensionamento fino a quando uno dei <xref:System.Windows.Forms.Button> bordi del controllo non è allineato a un altro controllo. Si noti che viene visualizzata una guide di allineamento. Si noti inoltre che il quadratino di ridimensionamento viene agganciato alla posizione indicata dalla Guide di allineamento.
 
@@ -188,7 +185,7 @@ Le guide di allineamento offrono un mezzo intuitivo per allineare i controlli ne
 
 - Creare una colonna di <xref:System.Windows.Forms.TextBox> controlli e una colonna corrispondente di <xref:System.Windows.Forms.Label> controlli. Impostare il valore della <xref:System.Windows.Forms.Label> proprietà Controls <xref:System.Windows.Forms.Control.AutoSize%2A> su `true` . Utilizzare le guide di allineamento per spostare i <xref:System.Windows.Forms.Label> controlli in modo che il testo visualizzato venga allineato al testo dei <xref:System.Windows.Forms.TextBox> controlli.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.Design.Behavior.SnapLine>
 - [Procedura dettagliata: Disposizione dei controlli in Windows Forms usando FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)

@@ -6,17 +6,14 @@ helpviewer_keywords:
 - UserControl class [Windows Forms], Windows Forms
 - custom controls [Windows Forms], creating
 ms.assetid: 7570e982-545b-4c3a-a7c7-55581d313400
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 169104f51898f9bda08efa08685207e50406a7ff
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: f7ad85bc0cafabacdd7bd48d7ccb8d7f6111e3e6
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96964003"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957040"
 ---
-# <a name="how-to-author-controls-for-windows-forms"></a>Procedura: creare controlli per Windows Forms
+# <a name="how-to-author-controls-for-windows-forms"></a>Procedura: creare controlli per Windows Form
 
 Un controllo rappresenta un collegamento grafico tra l'utente e il programma. Un controllo può fornire o elaborare dati, accettare input dall'utente, rispondere a eventi o eseguire qualsiasi numero di altre funzioni che connettono l'utente e l'applicazione. Poiché un controllo è essenzialmente un componente con un'interfaccia grafica, può essere utilizzato per le stesse funzioni di un componente oltre che per consentire l'interazione dell'utente. I controlli vengono creati per scopi specifici e la creazione di controlli è semplicemente un'altra attività di programmazione. Tenendo conto di questo, i passaggi seguenti rappresentano una panoramica del processo di creazione di un controllo. I collegamenti forniscono altre informazioni sui singoli passaggi.
 
@@ -50,7 +47,7 @@ Un controllo rappresenta un collegamento grafico tra l'utente e il programma. Un
 
 10. Creare il pacchetto e distribuire il controllo. Per informazioni dettagliate, vedere la pagina relativa [alla prima occhiata alla distribuzione in Visual Studio](/visualstudio/deployment/deploying-applications-services-and-components).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Ereditare dalla classe UserControl](how-to-inherit-from-the-usercontrol-class.md)
 - [Procedura: Ereditare dalla classe Control](how-to-inherit-from-the-control-class.md)

@@ -12,19 +12,16 @@ helpviewer_keywords:
 - Windows Forms, resizing
 - controls [Windows Forms], positioning
 ms.assetid: 59ea914f-fbd3-427a-80fe-decd02f7ae6d
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 7c307d8c5b3bc32e15e6de048c434854ef1bbc65
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: e7bc514f7347f257a6e2df67571c09df78f3c547
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96962077"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957163"
 ---
-# <a name="how-to-anchor-controls-on-windows-forms"></a>Procedura: ancorare i controlli in Windows Forms
+# <a name="how-to-anchor-controls-on-windows-forms"></a>Procedura: ancorare i controlli in Windows Form
 
-Se si progetta un modulo che l'utente può ridimensionare in fase di esecuzione, i controlli sul form devono essere ridimensionati e riposizionati correttamente. Per ridimensionare i controlli in modo dinamico con il modulo, è possibile usare la <xref:System.Windows.Forms.Control.Anchor%2A> proprietà dei controlli Windows Forms. La <xref:System.Windows.Forms.Control.Anchor%2A> proprietà definisce una posizione di ancoraggio per il controllo. Quando un controllo è ancorato a un form e il form viene ridimensionato, il controllo mantiene la distanza tra il controllo e le posizioni di ancoraggio. Se, ad esempio, si dispone di un <xref:System.Windows.Forms.TextBox> controllo ancorato ai bordi sinistro, destro e inferiore del form, quando il form viene ridimensionato, il <xref:System.Windows.Forms.TextBox> controllo viene ridimensionato orizzontalmente in modo da mantenere la stessa distanza dai lati destro e sinistro del form. Inoltre, il controllo si posiziona verticalmente in modo che la posizione sia sempre la stessa a distanza dal bordo inferiore del form. Se un controllo non è ancorato e il form viene ridimensionato, la posizione del controllo rispetto ai bordi del form viene modificata.
+Se si progetta un modulo che l'utente può ridimensionare in fase di esecuzione, i controlli sul form devono essere ridimensionati e riposizionati correttamente. Per ridimensionare i controlli in modo dinamico con il modulo, è possibile usare la <xref:System.Windows.Forms.Control.Anchor%2A> proprietà dei controlli Windows Form. La <xref:System.Windows.Forms.Control.Anchor%2A> proprietà definisce una posizione di ancoraggio per il controllo. Quando un controllo è ancorato a un form e il form viene ridimensionato, il controllo mantiene la distanza tra il controllo e le posizioni di ancoraggio. Se, ad esempio, si dispone di un <xref:System.Windows.Forms.TextBox> controllo ancorato ai bordi sinistro, destro e inferiore del form, quando il form viene ridimensionato, il <xref:System.Windows.Forms.TextBox> controllo viene ridimensionato orizzontalmente in modo da mantenere la stessa distanza dai lati destro e sinistro del form. Inoltre, il controllo si posiziona verticalmente in modo che la posizione sia sempre la stessa a distanza dal bordo inferiore del form. Se un controllo non è ancorato e il form viene ridimensionato, la posizione del controllo rispetto ai bordi del form viene modificata.
 
 La <xref:System.Windows.Forms.Control.Anchor%2A> proprietà interagisce con la <xref:System.Windows.Forms.Control.AutoSize%2A> Proprietà. Per ulteriori informazioni, vedere [Panoramica delle proprietà AutoSize](autosize-property-overview.md).
 
@@ -54,9 +51,9 @@ Quando il form viene visualizzato in fase di esecuzione, il controllo viene ridi
 
 I controlli ereditati devono essere in grado di essere `Protected` ancorati. Per modificare il livello di accesso di un controllo, impostarne la `Modifiers` proprietà nella finestra **Proprietà** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Controlli di Windows Forms](index.md)
+- [Controlli di Windows Form](index.md)
 - [Cenni preliminari sulla proprietà AutoSize](autosize-property-overview.md)
 - [Procedura: ancorare i controlli in Windows Form](how-to-dock-controls-on-windows-forms.md)
 - [Procedura dettagliata: Disposizione dei controlli in Windows Forms usando FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)

@@ -9,15 +9,12 @@ helpviewer_keywords:
 - controls [Windows Forms], positioning
 - controls [Windows Forms], aligning
 ms.assetid: b7175656-f532-49e9-b0b1-177d1b40af3e
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 4bde1926b89fe553ec9eda29ca5dfc1f3373af52
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: f9faac1957720fc5561ff08524a6e95bf20a7bff
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96962119"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957037"
 ---
 # <a name="how-to-align-multiple-controls-on-windows-forms"></a>Procedura: allineare più controlli in Windows Form
 
@@ -31,9 +28,9 @@ Per standardizzare il layout dell'interfaccia utente dell'applicazione basata su
 
 3. Scegliere **Allinea** dal menu **formato** e quindi selezionare una delle sette opzioni disponibili.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Controlli di Windows Forms](index.md)
+- [Controlli di Windows Form](index.md)
 - [Procedura: aggiungere controlli a un Windows Form](how-to-add-controls-to-windows-forms.md)
 - [Controlli da usare in Windows Form](controls-to-use-on-windows-forms.md)
 - [Controlli Windows Form per funzione](windows-forms-controls-by-function.md)

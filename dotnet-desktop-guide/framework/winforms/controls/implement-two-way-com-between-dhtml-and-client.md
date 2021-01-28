@@ -14,12 +14,12 @@ helpviewer_keywords:
 - WebBrowser control [Windows Forms], communication between DHTML and client application
 - DHTML [Windows Forms], embedding in Windows Forms
 ms.assetid: 55353a32-b09e-4479-a521-ff3a5ff9a708
-ms.openlocfilehash: 26cbc995a749c4c129729be700dee588d1033a05
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: c047f8de55ad7b66a6bc417db1a2678dc87b59c1
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96965116"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957266"
 ---
 # <a name="how-to-implement-two-way-communication-between-dhtml-code-and-client-application-code"></a>Procedura: Implementare comunicazioni bidirezionali tra il codice DHTML e il codice dell'applicazione client
 
@@ -44,19 +44,14 @@ Il controllo <xref:System.Windows.Forms.WebBrowser> consente di implementare com
      [!code-csharp[System.Windows.Forms.WebBrowser.ObjectForScripting#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/CS/form1.cs#3)]
      [!code-vb[System.Windows.Forms.WebBrowser.ObjectForScripting#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/vb/form1.vb#3)]
 
-4. Impostare la proprietà <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> nel costruttore del form o in un gestore eventi <xref:System.Windows.Forms.Form.Load>.
+4. Impostare la <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> proprietà nel costruttore del form o eseguire l'override del <xref:System.Windows.Forms.Form.OnLoad%2A> metodo.
 
      Il codice seguente usa la classe del form per l'oggetto script.
-
-    > [!NOTE]
-    > È necessario che Component Object Model (COM) possa accedere all'oggetto script. Per rendere visibile il form a COM, aggiungere l'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> alla classe del form.
 
      [!code-csharp[System.Windows.Forms.WebBrowser.ObjectForScripting#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/CS/form1.cs#4)]
      [!code-vb[System.Windows.Forms.WebBrowser.ObjectForScripting#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/vb/form1.vb#4)]
 
-5. Implementare proprietà o metodi pubblici nel codice dell'applicazione che verrà usato dal codice di script.
-
-     Se ad esempio si usa la classe del form per l'oggetto script, aggiungere alla classe il codice seguente.
+5. Implementare l'oggetto di scripting.
 
      [!code-csharp[System.Windows.Forms.WebBrowser.ObjectForScripting#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/CS/form1.cs#5)]
      [!code-vb[System.Windows.Forms.WebBrowser.ObjectForScripting#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/vb/form1.vb#5)]
@@ -108,7 +103,7 @@ Per questo codice sono necessari i requisiti seguenti:
 
 - Riferimenti agli assembly System e System.Windows.Forms.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.WebBrowser>
 - <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=nameWithType>

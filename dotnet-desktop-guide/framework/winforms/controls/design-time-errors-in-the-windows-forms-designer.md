@@ -10,15 +10,12 @@ helpviewer_keywords:
 - errors [Windows Forms Designer]
 - design-time errors [Windows Forms Designer]
 ms.assetid: ad408380-825a-46d8-9a4a-531b130b88ce
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 350fc57ea4ad1edc5f77aed0728555e6707c726f
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 21be6c80bb960ec37517784a256cc1745049a2db
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96951011"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957422"
 ---
 # <a name="windows-forms-designer-error-page"></a>Pagina di errore Progettazione Windows Form
 
@@ -45,7 +42,7 @@ Se è disponibile un argomento della Guida per l'errore, fare clic sul collegame
 
 ## <a name="forum-posts-about-this-error"></a>Post dei forum sull'errore
 
-Fare clic sul collegamento **Cerca nei forum MSDN per i post correlati a questo errore** per accedere ai forum di Microsoft Developer Network. Si consiglia di cercare in modo specifico i forum [Progettazione Windows Form](https://social.msdn.microsoft.com/Forums/windows/home?forum=winformsdesigner) o [Windows Forms](https://social.msdn.microsoft.com/Forums/windows/home?category=windowsforms) .
+Fare clic sul collegamento **Cerca nei forum MSDN per i post correlati a questo errore** per accedere ai forum di Microsoft Developer Network. Si consiglia di cercare in modo specifico i forum [Progettazione Windows Form](https://social.msdn.microsoft.com/Forums/windows/home?forum=winformsdesigner) o [Windows Form](https://social.msdn.microsoft.com/Forums/windows/home?category=windowsforms) .
 
 ## <a name="design-time-errors"></a>Errori in fase di progettazione
 
@@ -407,7 +404,7 @@ Questo errore indica che la lingua del progetto non supporta una finestra di pro
 
 Visual Studio ha caricato la classe, ma la classe non può essere progettata. Modificare invece la classe nella visualizzazione codice facendo clic con il pulsante destro del mouse sulla classe e scegliendo **Visualizza codice**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Sviluppare controlli Windows Forms tramite la finestra di progettazione](developing-windows-forms-controls-at-design-time.md)
+- [Sviluppare controlli Windows Form tramite la finestra di progettazione](developing-windows-forms-controls-at-design-time.md)
 - [Forum Progettazione Windows Form](https://social.msdn.microsoft.com/Forums/windows/home?forum=winformsdesigner)

@@ -1,5 +1,5 @@
 ---
-title: Disponi contenuto WPF in Windows Forms in fase di progettazione
+title: Disponi contenuto WPF in Windows Form in fase di progettazione
 titleSuffix: ''
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -10,19 +10,16 @@ helpviewer_keywords:
 - Windows Forms, anchoring and docking WPF content
 - interoperability [WPF]
 ms.assetid: 5efb1c53-1484-43d6-aa8a-f4861b99bb8a
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: b3acf39bdf6628737c328dc6e451c3ffac4896ee
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 9977edf657468ecb5269d22df838f8fedc79e461
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96963028"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957500"
 ---
-# <a name="walkthrough-arrange-wpf-content-on-windows-forms-at-design-time"></a>Procedura dettagliata: disposizione del contenuto WPF in Windows Forms in fase di progettazione
+# <a name="walkthrough-arrange-wpf-content-on-windows-forms-at-design-time"></a>Procedura dettagliata: disposizione del contenuto WPF in Windows Form in fase di progettazione
 
-Questo articolo illustra come usare le funzionalità di layout di Windows Forms, ad esempio l'ancoraggio e le guide di allineamento, per disporre i controlli Windows Presentation Foundation (WPF).
+Questo articolo illustra come usare le funzionalità di layout di Windows Form, ad esempio l'ancoraggio e le guide di allineamento, per disporre i controlli Windows Presentation Foundation (WPF).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -30,7 +27,7 @@ Per completare la procedura dettagliata, è necessario Visual Studio.
 
 ## <a name="create-the-project"></a>Creare il progetto
 
-Aprire Visual Studio e creare un nuovo progetto di applicazione Windows Forms in Visual Basic o Visual C# denominato `ArrangeElementHost` .
+Aprire Visual Studio e creare un nuovo progetto di applicazione Windows Form in Visual Basic o Visual C# denominato `ArrangeElementHost` .
 
 > [!NOTE]
 > Con il contenuto WPF sono supportati solo progetti C# e Visual Basic.
@@ -39,7 +36,7 @@ Aprire Visual Studio e creare un nuovo progetto di applicazione Windows Forms in
 
 Dopo avere aggiunto un controllo WPF al progetto, è possibile disporlo sul form.
 
-1. Aggiungere un nuovo <xref:System.Windows.Controls.UserControl> WPF al progetto. Usare il nome predefinito per il tipo di controllo, `UserControl1.xaml`. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di nuovi contenuti WPF in Windows Forms in fase di progettazione](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).
+1. Aggiungere un nuovo <xref:System.Windows.Controls.UserControl> WPF al progetto. Usare il nome predefinito per il tipo di controllo, `UserControl1.xaml`. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di nuovi contenuti WPF in Windows Form in fase di progettazione](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).
 
 2. In visualizzazione Progettazione verificare che `UserControl1` sia selezionato.
 
@@ -75,7 +72,7 @@ Dopo avere aggiunto un controllo WPF al progetto, è possibile disporlo sul form
 
 ## <a name="use-snaplines-to-align-wpf-controls"></a>Utilizzare le guide di allineamento per allineare i controlli WPF
 
-Le guide di allineamento semplificano l'allineamento dei controlli su un form. È possibile usare le guide di allineamento anche per allineare i controlli WPF. Per ulteriori informazioni, vedere [procedura dettagliata: disposizione dei controlli su Windows Forms mediante guide di allineamento](../controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md).
+Le guide di allineamento semplificano l'allineamento dei controlli su un form. È possibile usare le guide di allineamento anche per allineare i controlli WPF. Per ulteriori informazioni, vedere [procedura dettagliata: disposizione dei controlli su Windows Form mediante guide di allineamento](../controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md).
 
 1. Dalla **casella degli strumenti** trascinare un'istanza di nel `UserControl1` form e posizionarla nello spazio sotto il <xref:System.Windows.Forms.TableLayoutPanel> controllo.
 
@@ -129,7 +126,7 @@ Un controllo WPF incluso in un form è soggetto alle stesse regole di ancoraggio
 
     Per altre informazioni, vedere [procedura: ancorare e ancorare controlli figlio in un controllo TableLayoutPanel](../controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>

@@ -7,21 +7,18 @@ helpviewer_keywords:
 - ElementHost control [Windows Forms], copying and pasting at design time
 - WPF user control [Windows Forms], hosting in Windows Forms
 ms.assetid: e570375d-2a68-44ba-b4f7-c781af2d20e8
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: bde599dd8f2f592e9cd361c37572da240f710e2f
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 82312cdc2d5bf8d81b0eb53e3e8a3fdb3319a72f
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96951490"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98956915"
 ---
 # <a name="how-to-copy-and-paste-an-elementhost-control"></a>Procedura: copiare e incollare un controllo ElementHost
 
 Questa procedura illustra come copiare un controllo Windows Presentation Foundation (WPF) in un Windows Form in Visual Studio.
 
-1. In Visual Studio aggiungere un nuovo WPF <xref:System.Windows.Controls.UserControl> a un progetto Windows Forms. Usare il nome predefinito per il tipo di controllo, `UserControl1.xaml`. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di nuovi contenuti WPF in Windows Forms in fase di progettazione](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).
+1. In Visual Studio aggiungere un nuovo WPF <xref:System.Windows.Controls.UserControl> a un progetto Windows Form. Usare il nome predefinito per il tipo di controllo, `UserControl1.xaml`. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di nuovi contenuti WPF in Windows Form in fase di progettazione](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).
 
 2. Nella finestra **Proprietà** impostare il valore delle <xref:System.Windows.FrameworkElement.Width%2A> <xref:System.Windows.FrameworkElement.Height%2A> proprietà e di `UserControl1` su **200**.
 
@@ -41,7 +38,7 @@ Questa procedura illustra come copiare un controllo Windows Presentation Foundat
 
    <xref:System.Windows.Forms.Integration.ElementHost> `elementHost2` Nel form viene creato un nuovo controllo denominato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>

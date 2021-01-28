@@ -1,6 +1,6 @@
 ---
 title: Disporre gli oggetti su più livelli
-description: Informazioni su come eseguire il livello di oggetti su controlli Windows Forms e form figlio per creare interfacce utente più complesse.
+description: Informazioni su come eseguire il livello di oggetti su controlli Windows Form e form figlio per creare interfacce utente più complesse.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,17 +13,14 @@ helpviewer_keywords:
 - controls [Windows Forms], positioning
 - z-order
 ms.assetid: 1acc4281-2976-4715-86f4-bda68134baaf
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 6269b09c56963fefd500b9e1e6c9d7f51f9619cf
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 8f5532c434330848d34d2569f2fa81b01012448b
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96964729"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957682"
 ---
-# <a name="how-to-layer-objects-on-windows-forms"></a>Procedura: eseguire il layer di oggetti su Windows Forms
+# <a name="how-to-layer-objects-on-windows-forms"></a>Procedura: eseguire il layer di oggetti su Windows Form
 
 Quando si crea un'interfaccia utente complessa o si utilizza un form con interfaccia a documenti multipli (MDI), spesso si desidera eseguire il layer di entrambi i controlli e i form figlio per creare interfacce utente (UI) più complesse. Per spostare e tenere traccia dei controlli e delle finestre all'interno del contesto di un gruppo, è possibile modificare l' *ordine z*. L'ordine z è il livello visivo dei controlli in un form lungo l'asse z del form (profondità). La finestra nella parte superiore dello z-order si sovrappone a tutte le altre finestre. Tutte le altre finestre si sovrappongono alla finestra nella parte inferiore dello z-order.
 
@@ -52,11 +49,11 @@ txtFirstName->BringToFront();
 ```
 
 > [!NOTE]
-> Windows Forms supporta il *contenimento del controllo*. Il contenimento dei controlli comporta l'inserimento di un numero di controlli all'interno di un controllo contenitore, ad esempio un numero di <xref:System.Windows.Forms.RadioButton> controlli all'interno di un <xref:System.Windows.Forms.GroupBox> controllo. È quindi possibile sovrapporre i controlli all'interno del controllo che lo contiene. Spostando la casella di gruppo si spostano anche i controlli, perché sono contenuti al suo interno.
+> Windows Form supporta il *contenimento del controllo*. Il contenimento dei controlli comporta l'inserimento di un numero di controlli all'interno di un controllo contenitore, ad esempio un numero di <xref:System.Windows.Forms.RadioButton> controlli all'interno di un <xref:System.Windows.Forms.GroupBox> controllo. È quindi possibile sovrapporre i controlli all'interno del controllo che lo contiene. Spostando la casella di gruppo si spostano anche i controlli, perché sono contenuti al suo interno.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Controlli di Windows Forms](index.md)
+- [Controlli di Windows Form](index.md)
 - [Impostazione delle etichette di singoli controlli Windows Form e creazione dei relativi tasti di scelta rapida](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
 - [Controlli da usare in Windows Form](controls-to-use-on-windows-forms.md)
 - [Controlli Windows Form per funzione](windows-forms-controls-by-function.md)

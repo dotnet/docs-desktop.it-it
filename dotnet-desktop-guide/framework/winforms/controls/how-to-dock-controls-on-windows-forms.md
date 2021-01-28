@@ -6,19 +6,16 @@ helpviewer_keywords:
 - Explorer-style applications [Windows Forms], creating
 - Windows Forms controls, filling client area
 ms.assetid: bc11f2e4-e90a-4830-b0e2-f43b6e2b8bec
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 02f1c26dcb322a39c41781c83d8c820bd2fd27e0
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: c765c7e1a109a6185cca130f120d032eb0a6a3cf
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96964414"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98956954"
 ---
-# <a name="how-to-dock-controls-on-windows-forms"></a>Procedura: ancorare i controlli in Windows Forms
+# <a name="how-to-dock-controls-on-windows-forms"></a>Procedura: ancorare i controlli in Windows Form
 
-È possibile ancorare i controlli ai bordi del form oppure fare in modo che riempiano il contenitore del controllo, ovvero un form o un controllo contenitore. Ad esempio, Esplora risorse ancora il <xref:System.Windows.Forms.TreeView> controllo al lato sinistro della finestra e il relativo controllo sul <xref:System.Windows.Forms.ListView> lato destro della finestra. Usare la <xref:System.Windows.Forms.Control.Dock%2A> proprietà per tutti i controlli di Windows Forms visibili per definire la modalità di ancoraggio.
+È possibile ancorare i controlli ai bordi del form oppure fare in modo che riempiano il contenitore del controllo, ovvero un form o un controllo contenitore. Ad esempio, Esplora risorse ancora il <xref:System.Windows.Forms.TreeView> controllo al lato sinistro della finestra e il relativo controllo sul <xref:System.Windows.Forms.ListView> lato destro della finestra. Usare la <xref:System.Windows.Forms.Control.Dock%2A> proprietà per tutti i controlli di Windows Form visibili per definire la modalità di ancoraggio.
 
 > [!NOTE]
 > I controlli sono ancorati nell'ordine z inverso.
@@ -40,9 +37,9 @@ La <xref:System.Windows.Forms.Control.Dock%2A> proprietà interagisce con la <xr
    > [!NOTE]
    > I controlli ereditati devono essere in grado di essere `Protected` ancorati. Per modificare il livello di accesso di un controllo, impostarne la proprietà **Modifier** nella finestra **Proprietà** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Controlli di Windows Forms](index.md)
+- [Controlli di Windows Form](index.md)
 - [Impostazione delle etichette di singoli controlli Windows Form e creazione dei relativi tasti di scelta rapida](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
 - [Controlli da usare in Windows Form](controls-to-use-on-windows-forms.md)
 - [Controlli Windows Form per funzione](windows-forms-controls-by-function.md)

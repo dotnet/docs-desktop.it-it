@@ -7,15 +7,12 @@ helpviewer_keywords:
 - user controls [Windows Forms], inheriting from
 - composite controls [Windows Forms], creating
 ms.assetid: 79c9cf05-5ab6-4a18-886d-88a64748b098
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 42ea424507b89576df8099fd4849dd2665135a55
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 96704b4acbba8c0e466e8d3ef4d2f569e1d1c7fb
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96964510"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98956967"
 ---
 # <a name="how-to-author-composite-controls"></a>Procedura: creare controlli compositi
 
@@ -77,10 +74,10 @@ I controlli compositi possono essere usati in molti modi. È possibile crearli c
 
      È possibile visualizzare i controlli costitutivi ereditati dal controllo composito nella DLL ed è possibile modificare le proprietà dei controlli la cui proprietà **Modifiers** è **Public**. Non è possibile modificare le proprietà del controllo la cui proprietà **Modifiers** è **Private**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: modifica di un controllo composito](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
-- [Procedura dettagliata: eredità da un controllo Windows Forms](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)
+- [Procedura dettagliata: eredità da un controllo Windows Form](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)
 - [Consigli sui tipi di controlli](control-type-recommendations.md)
 - [Procedura: Creare controlli per Windows Form](how-to-author-controls-for-windows-forms.md)
 - [Tipi di controlli personalizzati](varieties-of-custom-controls.md)

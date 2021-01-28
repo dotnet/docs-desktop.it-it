@@ -9,17 +9,14 @@ helpviewer_keywords:
 - user controls [Windows Forms]
 - custom controls [Windows Forms]
 ms.assetid: e5a8e088-7ec8-4fd9-bcb3-9078fd134829
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 4e192983c5818ddb81ed4581d91ae61375bb808e
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: d5285bd4190e74a86e20d951d9ebb2256c21c544
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96950978"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98956980"
 ---
-# <a name="develop-windows-forms-controls-at-design-time"></a>Sviluppare controlli Windows Forms in fase di progettazione
+# <a name="develop-windows-forms-controls-at-design-time"></a>Sviluppare controlli Windows Form in fase di progettazione
 
 .NET Framework offre agli autori di controlli numerose tecnologie di creazione dei controlli. Gli autori non devono più limitarsi alla progettazione di controlli compositi che fungono da raccolta dei controlli preesistenti. Grazie all'ereditarietà, è possibile creare i propri controlli da controlli compositi preesistenti o da controlli Windows Form preesistenti. È anche possibile progettare propri controlli che implementano il disegno personalizzato. Queste opzioni offrono una grande flessibilità per la progettazione e la funzionalità dell'interfaccia visiva. Per sfruttare queste funzionalità, è preferibile avere familiarità con i concetti della programmazione basata su oggetti.
 
@@ -33,7 +30,7 @@ Per creare controlli personalizzati da usare nei Web Form, vedere [Sviluppo di c
 [Procedura dettagliata: modifica di un controllo composito](walkthrough-authoring-a-composite-control-with-visual-csharp.md)\
 Illustra come creare un controllo composito semplice in C#.
 
-[Procedura dettagliata: eredità da un controllo Windows Forms](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)\
+[Procedura dettagliata: eredità da un controllo Windows Form](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)\
 Illustra come creare un controllo Windows Form semplice usando l'ereditarietà in C#.
 
 [Procedura dettagliata: eseguire attività comuni utilizzando le azioni della finestra di progettazione](perform-common-tasks-design-actions.md)\
@@ -42,13 +39,13 @@ Illustra come usare la funzionalità di smart tag nei controlli Windows Form.
 [Procedura dettagliata: serializzazione di raccolte di tipi standard con DesignerSerializationVisibilityAttribute](serializing-collections-designerserializationvisibilityattribute.md)\
 Viene illustrato come utilizzare l' <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content?displayProperty=nameWithType> attributo per serializzare una raccolta.
 
-[Procedura dettagliata: debug di controlli di Windows Forms personalizzati in fase di progettazione](walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)\
+[Procedura dettagliata: debug di controlli di Windows Form personalizzati in fase di progettazione](walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)\
 Illustra come eseguire il debug del comportamento in fase di progettazione di un controllo Windows Form.
 
-[Procedura dettagliata: creazione di un controllo Windows Forms che sfrutta le funzionalità di Visual Studio Design-Time](creating-a-wf-control-design-time-features.md)\
+[Procedura dettagliata: creazione di un controllo Windows Form che sfrutta le funzionalità di Visual Studio Design-Time](creating-a-wf-control-design-time-features.md)\
 Illustra come integrare profondamente un controllo composito nell'ambiente di progettazione.
 
-[Procedura: creare controlli per Windows Forms](how-to-author-controls-for-windows-forms.md)\
+[Procedura: creare controlli per Windows Form](how-to-author-controls-for-windows-forms.md)\
 Offre una serie di considerazioni sull'implementazione di un controllo Windows Form.
 
 [Procedura: creare controlli compositi](how-to-author-composite-controls.md)\
@@ -57,7 +54,7 @@ Illustra come creare un controllo ereditando da un controllo composito.
 [Procedura: ereditare dalla classe UserControl](how-to-inherit-from-the-usercontrol-class.md)\
 Offre una panoramica della procedura di creazione di un controllo composito.
 
-[Procedura: ereditare da controlli Windows Forms esistenti](how-to-inherit-from-existing-windows-forms-controls.md)\
+[Procedura: ereditare da controlli Windows Form esistenti](how-to-inherit-from-existing-windows-forms-controls.md)\
 Viene illustrato come creare un controllo esteso ereditando dalla classe del <xref:System.Windows.Forms.Button> controllo.
 
 [Procedura: ereditare dalla classe Control](how-to-inherit-from-the-control-class.md)\
@@ -81,7 +78,7 @@ Illustra il significato e l'uso dell'elenco errori della fase di progettazione v
 [Risoluzione dei problemi relativi alla creazione di controlli e componenti](troubleshooting-control-and-component-authoring.md)\
 Illustra come diagnosticare e correggere gli errori comuni che possono verificarsi quando si crea un componente o un controllo personalizzato.
 
-## <a name="reference"></a>Informazioni di riferimento
+## <a name="reference"></a>Riferimento
 
 - <xref:System.Windows.Forms.Control?displayProperty=nameWithType>
 
@@ -89,7 +86,7 @@ Illustra come diagnosticare e correggere gli errori comuni che possono verificar
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-[Sviluppo di controlli Windows Forms personalizzati con l'.NET Framework](developing-custom-windows-forms-controls.md)\
+[Sviluppo di controlli Windows Form personalizzati con l'.NET Framework](developing-custom-windows-forms-controls.md)\
 Illustra come creare i controlli personalizzati con .NET Framework.
 
 [Indipendenza del linguaggio e componenti Language-Independent](/dotnet/standard/language-independence-and-language-independent-components)\

@@ -11,15 +11,12 @@ helpviewer_keywords:
 - collections [Windows Forms], serializing
 - collections [Windows Forms], standard types
 ms.assetid: 020c9df4-fdc5-4dae-815a-963ecae5668c
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 06ef484ffed76bad124ca33d240a4054fd937c14
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: f4fb9c6e7c48a1c6671b14ba05a63dc61195105a
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96950935"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957617"
 ---
 # <a name="walkthrough-serialize-collections-of-standard-types"></a>Procedura dettagliata: serializzare raccolte di tipi standard
 
@@ -48,7 +45,7 @@ Il primo passaggio consiste nel creare un controllo con una raccolta serializzab
     |Proprietà|Modificare in|
     |--------------|---------------|
     |**Multiline**|`true`|
-    |**Dock**|<xref:System.Windows.Forms.DockStyle.Fill>|
+    |**Ancora**|<xref:System.Windows.Forms.DockStyle.Fill>|
     |**BarreScorrimento**|<xref:System.Windows.Forms.ScrollBars.Vertical>|
     |**ReadOnly**|`true`|
 
@@ -135,9 +132,9 @@ Quando si sa come serializzare una raccolta di tipi standard, è consigliabile i
 
 - [Cenni preliminari sulla serializzazione della finestra di progettazione](/previous-versions/visualstudio/visual-studio-2013/ms171834(v=vs.120))
 
-- [Procedura dettagliata: creazione di un controllo Windows Forms che sfrutta le funzionalità di Visual Studio Design-Time](creating-a-wf-control-design-time-features.md)
+- [Procedura dettagliata: creazione di un controllo Windows Form che sfrutta le funzionalità di Visual Studio Design-Time](creating-a-wf-control-design-time-features.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>
 - [Procedura dettagliata: Compilare automaticamente la casella degli strumenti con componenti personalizzati](walkthrough-automatically-populating-the-toolbox-with-custom-components.md)

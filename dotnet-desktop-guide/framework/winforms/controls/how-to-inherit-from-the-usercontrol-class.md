@@ -7,15 +7,12 @@ helpviewer_keywords:
 - user controls [Windows Forms], creating
 - composite controls [Windows Forms], creating
 ms.assetid: 67713625-e2e4-4f6a-bce7-0855ee5043d9
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 5c278cfadd1bb0c9720718c08791a37f90d964d7
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 0b37f68501372e491170e450b60ca1dab9806132
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96964762"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957695"
 ---
 # <a name="how-to-inherit-from-the-usercontrol-class"></a>Procedura: Ereditare dalla classe UserControl
 
@@ -35,7 +32,7 @@ Per combinare le funzionalità di uno o più controlli Windows Form con il codic
 
 5. Premere **F5** per compilare il progetto ed eseguire il controllo in **UserControl Test Container**. Per altre informazioni, vedere [Procedura: Eseguire il test del comportamento in fase di esecuzione di UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Tipi di controlli personalizzati](varieties-of-custom-controls.md)
 - [Procedura: Ereditare dalla classe Control](how-to-inherit-from-the-control-class.md)

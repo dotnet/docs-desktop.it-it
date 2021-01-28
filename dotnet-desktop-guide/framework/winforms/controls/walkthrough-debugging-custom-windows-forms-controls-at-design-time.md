@@ -15,19 +15,16 @@ helpviewer_keywords:
 - walkthroughs [Windows Forms], debugging
 - design-time debugging
 ms.assetid: 1fd83ccd-3798-42fc-85a3-6cba99467387
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: d9e292a1219c24571bcb35db2fe357b0197c8812
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 3827be560c097685e1448b65704a943618b2b45d
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96964717"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957201"
 ---
-# <a name="walkthrough-debug-custom-windows-forms-controls-at-design-time"></a>Procedura dettagliata: debug di controlli di Windows Forms personalizzati in fase di progettazione
+# <a name="walkthrough-debug-custom-windows-forms-controls-at-design-time"></a>Procedura dettagliata: debug di controlli di Windows Form personalizzati in fase di progettazione
 
-Quando si crea un controllo personalizzato, sarà spesso necessario eseguire il debug del comportamento in fase di progettazione. Questo vale soprattutto se si crea una finestra di progettazione personalizzata per il controllo personalizzato. Per informazioni dettagliate, vedere [procedura dettagliata: creazione di un controllo Windows Forms che sfrutta i vantaggi delle funzionalità Design-Time di Visual Studio](creating-a-wf-control-design-time-features.md).
+Quando si crea un controllo personalizzato, sarà spesso necessario eseguire il debug del comportamento in fase di progettazione. Questo vale soprattutto se si crea una finestra di progettazione personalizzata per il controllo personalizzato. Per informazioni dettagliate, vedere [procedura dettagliata: creazione di un controllo Windows Form che sfrutta i vantaggi delle funzionalità Design-Time di Visual Studio](creating-a-wf-control-design-time-features.md).
 
 È possibile eseguire il debug dei controlli personalizzati con Visual Studio, proprio come per qualsiasi altra classe .NET Framework. La differenza è che si eseguirà il debug di un'istanza separata di Visual Studio che esegue il codice del controllo personalizzato.
 
@@ -147,8 +144,8 @@ Ora che è possibile eseguire il debug dei controlli personalizzati in fase di p
 
 - Sono disponibili diversi attributi che è possibile applicare alle proprietà del controllo per modificare l'interazione del controllo personalizzato con la finestra di progettazione. È possibile trovare questi attributi nello <xref:System.ComponentModel?displayProperty=nameWithType> spazio dei nomi.
 
-- È possibile scrivere una finestra di progettazione personalizzata per il controllo personalizzato. Questo consente di controllare completamente l'esperienza di progettazione usando l'infrastruttura di progettazione estendibile esposta da Visual Studio. Per informazioni dettagliate, vedere [procedura dettagliata: creazione di un controllo Windows Forms che sfrutta i vantaggi delle funzionalità Design-Time di Visual Studio](creating-a-wf-control-design-time-features.md).
+- È possibile scrivere una finestra di progettazione personalizzata per il controllo personalizzato. Questo consente di controllare completamente l'esperienza di progettazione usando l'infrastruttura di progettazione estendibile esposta da Visual Studio. Per informazioni dettagliate, vedere [procedura dettagliata: creazione di un controllo Windows Form che sfrutta i vantaggi delle funzionalità Design-Time di Visual Studio](creating-a-wf-control-design-time-features.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Procedura dettagliata: creazione di un controllo Windows Forms che sfrutta le funzionalità di Visual Studio Design-Time](creating-a-wf-control-design-time-features.md)
+- [Procedura dettagliata: creazione di un controllo Windows Form che sfrutta le funzionalità di Visual Studio Design-Time](creating-a-wf-control-design-time-features.md)

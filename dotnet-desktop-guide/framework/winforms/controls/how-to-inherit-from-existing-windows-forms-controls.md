@@ -8,15 +8,12 @@ helpviewer_keywords:
 - inheritance [Windows Forms], Windows Forms custom controls
 - custom controls [Windows Forms], inheritance
 ms.assetid: 1e1fc8ea-c615-4cf0-a356-16d6df7444ab
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: de9e4dc9e358092934e9326dd08c687478fac57b
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 7d9766c1bb1812cc5978221ccec42f5eb2c8c4ff
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96963781"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957721"
 ---
 # <a name="how-to-inherit-from-existing-windows-forms-controls"></a>Procedura: ereditare da controlli di Windows Form esistenti
 
@@ -24,7 +21,7 @@ Se si desidera estendere le funzionalità di un controllo esistente, è possibil
 
 ## <a name="to-create-an-inherited-control"></a>Per creare un controllo ereditato
 
-1. In Visual Studio creare un nuovo progetto di **applicazione Windows Forms** .
+1. In Visual Studio creare un nuovo progetto di **applicazione Windows Form** .
 
 1. Dal menu **Progetto**, scegliere **Aggiungi nuovo elemento**.
 
@@ -85,11 +82,11 @@ Se si desidera estendere le funzionalità di un controllo esistente, è possibil
 
 1. Salvare ed eseguire il test del controllo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Tipi di controlli personalizzati](varieties-of-custom-controls.md)
 - [Procedura: Ereditare dalla classe Control](how-to-inherit-from-the-control-class.md)
 - [Procedura: Ereditare dalla classe UserControl](how-to-inherit-from-the-usercontrol-class.md)
 - [Procedura: Creare controlli per Windows Form](how-to-author-controls-for-windows-forms.md)
 - [Risoluzione dei problemi relativi ai gestori eventi ereditati in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)
-- [Procedura dettagliata: eredità da un controllo Windows Forms](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)
+- [Procedura dettagliata: eredità da un controllo Windows Form](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)

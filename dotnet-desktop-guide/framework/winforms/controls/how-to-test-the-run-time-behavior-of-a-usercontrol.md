@@ -8,15 +8,12 @@ helpviewer_keywords:
 - UserControl Test Container
 - UserControl class [Windows Forms], run-time behavior
 ms.assetid: 4e4d5c49-1346-40ac-9d96-40211b573583
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: c619900ea0b7f1b50976fec8d26dd3145dc07693
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 5b5570658e4625fdcece3441af61f6c477ae66e7
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96965158"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957085"
 ---
 # <a name="how-to-test-the-run-time-behavior-of-a-usercontrol"></a>Procedura: testare il comportamento della fase di esecuzione di UserControl
 
@@ -65,7 +62,7 @@ Quando si sviluppa un <xref:System.Windows.Forms.UserControl> , è necessario te
 
 6. Usare il **controllo Seleziona utente** <xref:System.Windows.Forms.ComboBox> per passare tra i due controlli utente dal progetto **EsempioTestContainer** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.UserControl>
 - [Procedura: Creare controlli compositi](how-to-author-composite-controls.md)

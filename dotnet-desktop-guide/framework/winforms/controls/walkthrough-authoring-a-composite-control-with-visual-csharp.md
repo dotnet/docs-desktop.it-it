@@ -10,15 +10,12 @@ helpviewer_keywords:
 - user controls [C#]
 - custom controls [Windows Forms], creating
 ms.assetid: f88481a8-c746-4a36-9479-374ce5f2e91f
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 3ad9aad026a1a6a1266845736d7651db77fd5d5c
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 1b1ad5daab8e62817d94ca6bb942ede293949c88
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96963778"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957604"
 ---
 # <a name="walkthrough-author-a-composite-control-with-c"></a>Procedura dettagliata: creare un controllo composito con C\#
 
@@ -30,7 +27,7 @@ Quando si crea un nuovo progetto è necessario specificarne il nome per impostar
 
 ### <a name="to-create-the-ctlclocklib-control-library-and-the-ctlclock-control"></a>Per creare la libreria di controlli ctlClockLib e il controllo ctlClock
 
-1. In Visual Studio creare un nuovo progetto di **libreria di controllo Windows Forms** e denominarlo **ctlClockLib**.
+1. In Visual Studio creare un nuovo progetto di **libreria di controllo Windows Form** e denominarlo **ctlClockLib**.
 
      Per impostazione predefinita il nome del progetto, `ctlClockLib`, verrà assegnato anche allo spazio dei nomi radice. Lo spazio dei nomi radice viene utilizzato per qualificare i nomi dei componenti dell'assembly. Se ad esempio due assembly forniscono componenti denominati `ctlClock`, sarà possibile specificare il componente `ctlClock` usando`ctlClockLib.ctlClock.`
 
@@ -359,7 +356,7 @@ Per utilizzare il controllo è necessario inserirlo in un modulo. Come i control
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ctlClockLib** e quindi scegliere **Compila**.
 
-2. Aggiungere un nuovo progetto di **applicazione Windows Forms** alla soluzione e denominarlo **test**.
+2. Aggiungere un nuovo progetto di **applicazione Windows Form** alla soluzione e denominarlo **test**.
 
 3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **riferimenti** per il progetto di test. Fare clic su **Aggiungi riferimento** per visualizzare la finestra di dialogo **Aggiungi riferimento**. Scegliere la scheda **Progetti**. Il progetto `ctlClockLib` verrà elencato in **Nome progetto**. Fare doppio clic sul progetto per cui si desidera aggiungere il riferimento al progetto di test.
 
@@ -414,7 +411,7 @@ Per utilizzare il controllo è necessario inserirlo in un modulo. Come i control
 
 Questo articolo ha trattato diversi concetti chiave. Si è appreso come creare un controllo composito combinando controlli e componenti in un contenitore controllo composito e come aggiungere proprietà al controllo e scrivere il codice per l'implementazione di funzionalità personalizzate. Nell'ultima sezione sono state illustrate l'estensione delle funzionalità di uno specifico controllo composito mediante ereditarietà e la modifica delle funzionalità dei metodi host mediante override.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Tipi di controlli personalizzati](varieties-of-custom-controls.md)
 - [Procedura: visualizzare un controllo nella finestra di dialogo Scegli elementi della Casella degli strumenti](how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)

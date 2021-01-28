@@ -9,15 +9,12 @@ helpviewer_keywords:
 - custom controls [Windows Forms], Toolbox bitmaps
 - bitmaps [Windows Forms], custom controls
 ms.assetid: 0ed0840a-616d-41ba-a27d-3573241932ad
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: bb4ccc3b95dc69606a33074f21ee66aa5efda55b
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: ed4f40d5b25014e5f8222a7406ea3d7eb3f8a98b
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96952061"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957656"
 ---
 # <a name="how-to-provide-a-toolbox-bitmap-for-a-control"></a>Procedura: Specificare una bitmap nella casella degli strumenti per un controllo
 
@@ -67,7 +64,7 @@ Utilizzando la <xref:System.Drawing.ToolboxBitmapAttribute> , è possibile speci
     > [!NOTE]
     > La bitmap non viene visualizzata nella casella degli strumenti per i controlli e i componenti generati automaticamente. Per visualizzare la bitmap, ricaricare il controllo usando la finestra di dialogo **Scegli elementi della casella degli strumenti**. Per altre informazioni, vedere [Procedura dettagliata: Compilare automaticamente la casella degli strumenti con componenti personalizzati](walkthrough-automatically-populating-the-toolbox-with-custom-components.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Drawing.ToolboxBitmapAttribute>
 - [Procedura dettagliata: Compilare automaticamente la casella degli strumenti con componenti personalizzati](walkthrough-automatically-populating-the-toolbox-with-custom-components.md)

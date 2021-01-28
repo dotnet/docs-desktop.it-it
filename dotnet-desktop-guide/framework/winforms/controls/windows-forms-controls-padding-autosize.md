@@ -15,19 +15,16 @@ helpviewer_keywords:
 - layout [Windows Forms], margins and padding
 - Windows Forms, layout
 ms.assetid: f8ae2a6b-db13-4630-8e25-d104091205c7
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: ca7942c04434592f2541252c47ac3dd17e03dbac
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 84b1a5d20d273bb9dee6e7f97cf8bd569e5e97ab
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96960919"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957578"
 ---
 # <a name="walkthrough-lay-out-controls-with-padding-margins-and-the-autosize-property"></a>Procedura dettagliata: disposizione dei controlli con spaziatura interna, margini e proprietà AutoSize
 
-Per molte applicazioni è estremamente importante la sistemazione precisa dei controlli nel form. Il **Progettazione Windows Form** in Visual Studio offre molti strumenti di layout a questo scopo. Tre dei più importanti sono le <xref:System.Windows.Forms.Control.Margin%2A> proprietà, <xref:System.Windows.Forms.Control.Padding%2A> e <xref:System.Windows.Forms.Control.AutoSize%2A> , che sono presenti in tutti i controlli Windows Forms.
+Per molte applicazioni è estremamente importante la sistemazione precisa dei controlli nel form. Il **Progettazione Windows Form** in Visual Studio offre molti strumenti di layout a questo scopo. Tre dei più importanti sono le <xref:System.Windows.Forms.Control.Margin%2A> proprietà, <xref:System.Windows.Forms.Control.Padding%2A> e <xref:System.Windows.Forms.Control.AutoSize%2A> , che sono presenti in tutti i controlli Windows Form.
 
 La proprietà <xref:System.Windows.Forms.Control.Margin%2A> definisce lo spazio intorno al controllo per mantenere gli altri controlli a una specifica distanza dai bordi del controllo stesso.
 
@@ -59,7 +56,7 @@ Per completare questa procedura dettagliata, è necessario Visual Studio.
 
 2. Selezionare uno dei <xref:System.Windows.Forms.Button> controlli e spostarlo vicino all'altro, fino a quando non sono quasi in contatto.
 
-   Osservare la guide di allineamento visualizzata tra di essi. Questa distanza è la somma dei valori dei due controlli <xref:System.Windows.Forms.Control.Margin%2A> . Il controllo spostato si blocca a questa distanza. Per informazioni dettagliate, vedere [procedura dettagliata: disposizione dei controlli su Windows Forms usando guide di allineamento](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md).
+   Osservare la guide di allineamento visualizzata tra di essi. Questa distanza è la somma dei valori dei due controlli <xref:System.Windows.Forms.Control.Margin%2A> . Il controllo spostato si blocca a questa distanza. Per informazioni dettagliate, vedere [procedura dettagliata: disposizione dei controlli su Windows Form usando guide di allineamento](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md).
 
 3. Modificare la <xref:System.Windows.Forms.Control.Margin%2A> proprietà di uno dei controlli espandendo la <xref:System.Windows.Forms.Control.Margin%2A> voce nella finestra **proprietà** e impostando la <xref:System.Windows.Forms.Padding.All%2A> proprietà su **20**.
 
@@ -166,15 +163,15 @@ Quando la <xref:System.Windows.Forms.Control.AutoSize%2A> proprietà è impostat
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Sono disponibili molte altre funzionalità di layout per la disposizione dei controlli nelle applicazioni Windows Forms. Di seguito sono riportate alcune combinazioni che è possibile provare:
+Sono disponibili molte altre funzionalità di layout per la disposizione dei controlli nelle applicazioni Windows Form. Di seguito sono riportate alcune combinazioni che è possibile provare:
 
-- Compilare un form usando un <xref:System.Windows.Forms.TableLayoutPanel> controllo. Per informazioni dettagliate, vedere [procedura dettagliata: disposizione dei controlli in Windows Forms usando TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md). Provare a modificare i valori della <xref:System.Windows.Forms.TableLayoutPanel> proprietà del controllo <xref:System.Windows.Forms.Control.Padding%2A> , nonché la <xref:System.Windows.Forms.Control.Margin%2A> proprietà sui relativi controlli figlio.
+- Compilare un form usando un <xref:System.Windows.Forms.TableLayoutPanel> controllo. Per informazioni dettagliate, vedere [procedura dettagliata: disposizione dei controlli in Windows Form usando TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md). Provare a modificare i valori della <xref:System.Windows.Forms.TableLayoutPanel> proprietà del controllo <xref:System.Windows.Forms.Control.Padding%2A> , nonché la <xref:System.Windows.Forms.Control.Margin%2A> proprietà sui relativi controlli figlio.
 
-- Provare lo stesso esperimento usando un <xref:System.Windows.Forms.FlowLayoutPanel> controllo. Per informazioni dettagliate, vedere [procedura dettagliata: disposizione dei controlli in Windows Forms tramite FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md).
+- Provare lo stesso esperimento usando un <xref:System.Windows.Forms.FlowLayoutPanel> controllo. Per informazioni dettagliate, vedere [procedura dettagliata: disposizione dei controlli in Windows Form tramite FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md).
 
 - Sperimentare l'ancoraggio dei controlli figlio in un <xref:System.Windows.Forms.Panel> controllo. La <xref:System.Windows.Forms.Control.Padding%2A> proprietà è una realizzazione più generale della <xref:System.Windows.Forms.ScrollableControl.DockPadding%2A> proprietà ed è possibile soddisfarla in questo caso inserendo un controllo figlio in un <xref:System.Windows.Forms.Panel> controllo e impostando la proprietà del controllo figlio <xref:System.Windows.Forms.Control.Dock%2A> su <xref:System.Windows.Forms.DockStyle.Fill> . Impostare la <xref:System.Windows.Forms.Panel> proprietà del controllo <xref:System.Windows.Forms.Control.Padding%2A> su vari valori e annotare l'effetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.Control.AutoSize%2A>
 - <xref:System.Windows.Forms.ScrollableControl.DockPadding%2A>

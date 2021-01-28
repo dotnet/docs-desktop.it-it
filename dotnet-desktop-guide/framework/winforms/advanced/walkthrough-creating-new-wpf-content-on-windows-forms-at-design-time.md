@@ -1,5 +1,5 @@
 ---
-title: Crea nuovo contenuto WPF in Windows Forms
+title: Crea nuovo contenuto WPF in Windows Form
 titleSuffix: ''
 ms.date: 08/18/2018
 helpviewer_keywords:
@@ -9,19 +9,16 @@ helpviewer_keywords:
 - ElementHost control
 - WPF user control [Windows Forms], hosting in Windows Forms
 ms.assetid: 2e92d8e8-f0e4-4df7-9f07-2acf35cd798c
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: f00beea138cb623879e28f893775ab7bb4933d52
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: a4df7799741df7c47ae21e675d9e37f51a60f49a
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96962350"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957370"
 ---
-# <a name="walkthrough-create-new-wpf-content-on-windows-forms-at-design-time"></a>Procedura dettagliata: creare nuovi contenuti WPF in Windows Forms in fase di progettazione
+# <a name="walkthrough-create-new-wpf-content-on-windows-forms-at-design-time"></a>Procedura dettagliata: creare nuovi contenuti WPF in Windows Form in fase di progettazione
 
-Questo articolo illustra come creare un controllo Windows Presentation Foundation (WPF) da usare nelle applicazioni basate su Windows Forms.
+Questo articolo illustra come creare un controllo Windows Presentation Foundation (WPF) da usare nelle applicazioni basate su Windows Form.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -29,7 +26,7 @@ Per completare la procedura dettagliata, è necessario Visual Studio.
 
 ## <a name="create-the-project"></a>Creare il progetto
 
-Aprire Visual Studio e creare un nuovo progetto di **App Windows Forms (.NET Framework)** in Visual Basic o Visual C# denominato `HostingWpf` .
+Aprire Visual Studio e creare un nuovo progetto di **App Windows Form (.NET Framework)** in Visual Basic o Visual C# denominato `HostingWpf` .
 
 > [!NOTE]
 > Con il contenuto WPF sono supportati solo progetti C# e Visual Basic.
@@ -70,7 +67,7 @@ Per creare un nuovo controllo WPF:
 
 ## <a name="add-a-wpf-control-to-a-windows-form"></a>Aggiungere un controllo WPF a un Windows Form
 
-Il nuovo controllo WPF è pronto per l'uso sul form. Windows Forms usa il <xref:System.Windows.Forms.Integration.ElementHost> controllo per ospitare il contenuto WPF.
+Il nuovo controllo WPF è pronto per l'uso sul form. Windows Form usa il <xref:System.Windows.Forms.Integration.ElementHost> controllo per ospitare il contenuto WPF.
 
 Per aggiungere un controllo WPF a un Windows Form:
 
@@ -96,13 +93,13 @@ Per aggiungere un controllo WPF a un Windows Form:
 
 Windows Form e WPF sono tecnologie diverse progettate per interagire strettamente. Per fornire un aspetto e un comportamento più completi nelle applicazioni, provare a eseguire le operazioni seguenti:
 
-- Ospitare un controllo Windows Form in una pagina WPF. Per ulteriori informazioni, vedere [procedura dettagliata: hosting di un controllo Windows Forms in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf).
+- Ospitare un controllo Windows Form in una pagina WPF. Per ulteriori informazioni, vedere [procedura dettagliata: hosting di un controllo Windows Form in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf).
 
 - Applicare stili di visualizzazione Windows Form al contenuto WPF. Per altre informazioni, vedere [Procedura: Abilitare stili di visualizzazione in un'applicazione ibrida](/dotnet/framework/wpf/advanced/how-to-enable-visual-styles-in-a-hybrid-application).
 
 - Modificare lo stile del contenuto WPF. Per ulteriori informazioni, vedere [procedura dettagliata: applicazione di stili al contenuto WPF](walkthrough-styling-wpf-content.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>

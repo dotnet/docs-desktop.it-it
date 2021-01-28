@@ -11,15 +11,12 @@ helpviewer_keywords:
 - components [Windows Forms], troubleshooting
 - Windows Forms controls, debugging
 ms.assetid: e9c8c099-2271-4737-882f-50f336c7a55e
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 79841656d61cb6278c617504a0a6608f1b5c7632
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: cd05f3d0b4c8eed6432a9fd7de316fc331324443
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96966697"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957591"
 ---
 # <a name="troubleshoot-control-and-component-authoring"></a>Risolvere i problemi relativi alla creazione di controlli e componenti
 
@@ -111,13 +108,13 @@ Il componente o il controllo deve fornire un costruttore senza parametri senza p
 
 ## <a name="stathreadattribute"></a>STAThreadAttribute
 
-<xref:System.STAThreadAttribute>Informa il Common Language Runtime (CLR) che Windows Forms utilizza il modello di Apartment a thread singolo. È possibile riscontrare un comportamento imprevisto se non si applica questo attributo al metodo `Main` dell'applicazione Windows Form. Ad esempio, le immagini di sfondo potrebbero non essere visualizzate per i controlli come <xref:System.Windows.Forms.ListView> . Alcuni controlli possono inoltre richiedere questo attributo per il funzionamento corretto del completamento automatico e del trascinamento della selezione.
+<xref:System.STAThreadAttribute>Informa il Common Language Runtime (CLR) che Windows Form utilizza il modello di Apartment a thread singolo. È possibile riscontrare un comportamento imprevisto se non si applica questo attributo al metodo `Main` dell'applicazione Windows Form. Ad esempio, le immagini di sfondo potrebbero non essere visualizzate per i controlli come <xref:System.Windows.Forms.ListView> . Alcuni controlli possono inoltre richiedere questo attributo per il funzionamento corretto del completamento automatico e del trascinamento della selezione.
 
 ## <a name="component-icon-does-not-appear-in-toolbox"></a>L'icona del componente non appare nella casella degli strumenti
 
 Quando si utilizza <xref:System.Drawing.ToolboxBitmapAttribute> per associare un'icona al componente personalizzato, la bitmap non viene visualizzata nella casella degli strumenti per i componenti generati automaticamente. Per visualizzare la bitmap, ricaricare il controllo usando la finestra di dialogo **Scegli elementi della casella degli strumenti**. Per altre informazioni, vedere [Procedura: Specificare una bitmap nella casella degli strumenti per un controllo](how-to-provide-a-toolbox-bitmap-for-a-control.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sviluppo di controlli Windows Form in fase di progettazione](developing-windows-forms-controls-at-design-time.md)
 - [Procedura dettagliata: Compilare automaticamente la casella degli strumenti con componenti personalizzati](walkthrough-automatically-populating-the-toolbox-with-custom-components.md)

@@ -8,19 +8,16 @@ helpviewer_keywords:
 - inheritance [Windows Forms], walkthroughs
 - custom controls [Windows Forms], inheritance
 ms.assetid: 09476da0-8d4c-4a4c-b969-649519dfb438
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 83bd1b09049dc4650e6b48d1cb0dbe6b452eda26
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: e49ba47ccc37876c05b5b3440ee5febf128e925e
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96964705"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957188"
 ---
-# <a name="walkthrough-inherit-from-a-windows-forms-control-with-c"></a>Procedura dettagliata: ereditare da un controllo Windows Forms con C\#
+# <a name="walkthrough-inherit-from-a-windows-forms-control-with-c"></a>Procedura dettagliata: ereditare da un controllo Windows Form con C\#
 
-Con C# è possibile creare controlli personalizzati avanzati tramite l' *ereditarietà*. L'ereditarietà consente di creare nuovi controlli che non solo conservano tutte le funzionalità proprie dei controlli Windows Forms standard, ma includono anche funzionalità personalizzate. In questa procedura verrà creato un controllo ereditato semplice denominato `ValueButton`. Questo pulsante erediterà la funzionalità dal controllo Windows Forms standard <xref:System.Windows.Forms.Button> e esporrà una proprietà personalizzata denominata `ButtonValue` .
+Con C# è possibile creare controlli personalizzati avanzati tramite l' *ereditarietà*. L'ereditarietà consente di creare nuovi controlli che non solo conservano tutte le funzionalità proprie dei controlli Windows Forms standard, ma includono anche funzionalità personalizzate. In questa procedura verrà creato un controllo ereditato semplice denominato `ValueButton`. Questo pulsante erediterà la funzionalità dal controllo Windows Form standard <xref:System.Windows.Forms.Button> e esporrà una proprietà personalizzata denominata `ButtonValue` .
 
 ## <a name="create-the-project"></a>Creare il progetto
 
@@ -28,7 +25,7 @@ Quando si crea un nuovo progetto è necessario specificarne il nome per impostar
 
 ### <a name="to-create-the-valuebuttonlib-control-library-and-the-valuebutton-control"></a>Per creare la libreria di controlli ValueButtonLib e il controllo ValueButton
 
-1. In Visual Studio creare un nuovo progetto di **libreria di controllo Windows Forms** e denominarlo **ValueButtonLib**.
+1. In Visual Studio creare un nuovo progetto di **libreria di controllo Windows Form** e denominarlo **ValueButtonLib**.
 
      Per impostazione predefinita il nome del progetto, `ValueButtonLib`, verrà assegnato anche allo spazio dei nomi radice. Lo spazio dei nomi radice viene utilizzato per qualificare i nomi dei componenti dell'assembly. Se ad esempio due assembly forniscono componenti denominati `ValueButton`, sarà possibile specificare il componente `ValueButton` utilizzando `ValueButtonLib.ValueButton`. Per altre informazioni, vedere [Spazi dei nomi](/dotnet/csharp/programming-guide/namespaces/index).
 
@@ -117,7 +114,7 @@ Nel menu **Compila** scegliere **Compila soluzione**. La compilazione dovrebbe e
 
 5. Impostare la proprietà **ButtonValue** su **5**.
 
-6. Nella scheda **tutti Windows Forms** della **casella degli strumenti** fare doppio clic su **etichetta** per aggiungere un <xref:System.Windows.Forms.Label> controllo al form.
+6. Nella scheda **tutti Windows Form** della **casella degli strumenti** fare doppio clic su **etichetta** per aggiungere un <xref:System.Windows.Forms.Label> controllo al form.
 
 7. Posizionare l'etichetta al centro del modulo.
 
@@ -141,7 +138,7 @@ Nel menu **Compila** scegliere **Compila soluzione**. La compilazione dovrebbe e
 
      Il numero "5" verrà visualizzato in `label1`, a significare che la proprietà `ButtonValue` del controllo ereditato è stata passata a `label1` mediante il metodo `valueButton1_Click`. Il controllo `ValueButton` erediterà tutte le funzionalità del pulsante standard per Windows Forms, ma esporrà una proprietà personalizzata aggiuntiva.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: visualizzare un controllo nella finestra di dialogo Scegli elementi della Casella degli strumenti](how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)
 - [Procedura dettagliata: modifica di un controllo composito con Visual C #](walkthrough-authoring-a-composite-control-with-visual-csharp.md)

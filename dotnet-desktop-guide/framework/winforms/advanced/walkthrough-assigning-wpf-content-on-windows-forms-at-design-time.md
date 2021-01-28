@@ -1,5 +1,5 @@
 ---
-title: Selezionare i controlli WPF per Windows Forms
+title: Selezionare i controlli WPF per Windows Form
 titleSuffix: ''
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,17 +9,14 @@ helpviewer_keywords:
 - Windows Forms, content assignments
 - WPF user control [Windows Forms], hosting in Windows Forms
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: c1532206b467c523ffd8e4cf4f85c168a4aad80b
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: ba003c020be1f04c2024eaab0125f074d5b7bc18
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96962353"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957383"
 ---
-# <a name="walkthrough-assign-wpf-content-on-windows-forms-at-design-time"></a>Procedura dettagliata: assegnare contenuto WPF in Windows Forms in fase di progettazione
+# <a name="walkthrough-assign-wpf-content-on-windows-forms-at-design-time"></a>Procedura dettagliata: assegnare contenuto WPF in Windows Form in fase di progettazione
 
 Questo articolo illustra come selezionare i tipi di controllo Windows Presentation Foundation (WPF) che si desidera visualizzare nel form. È possibile selezionare qualsiasi tipo di controllo WPF incluso nel progetto.
 
@@ -29,7 +26,7 @@ Per completare la procedura dettagliata, è necessario Visual Studio.
 
 ## <a name="create-the-project"></a>Creare il progetto
 
-Aprire Visual Studio e creare un nuovo progetto di applicazione Windows Forms in Visual Basic o Visual C# denominato `SelectingWpfContent` .
+Aprire Visual Studio e creare un nuovo progetto di applicazione Windows Form in Visual Basic o Visual C# denominato `SelectingWpfContent` .
 
 > [!NOTE]
 > Con il contenuto WPF sono supportati solo progetti C# e Visual Basic.
@@ -38,7 +35,7 @@ Aprire Visual Studio e creare un nuovo progetto di applicazione Windows Forms in
 
 Dopo avere aggiunto i tipi di controllo WPF al progetto, è possibile includerli in controlli <xref:System.Windows.Forms.Integration.ElementHost> diversi.
 
-1. Aggiungere un nuovo progetto WPF <xref:System.Windows.Controls.UserControl> alla soluzione. Usare il nome predefinito per il tipo di controllo, `UserControl1.xaml`. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di nuovi contenuti WPF in Windows Forms in fase di progettazione](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).
+1. Aggiungere un nuovo progetto WPF <xref:System.Windows.Controls.UserControl> alla soluzione. Usare il nome predefinito per il tipo di controllo, `UserControl1.xaml`. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di nuovi contenuti WPF in Windows Form in fase di progettazione](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).
 
 2. In visualizzazione Progettazione verificare che `UserControl1` sia selezionato.
 
@@ -85,7 +82,7 @@ Dopo avere aggiunto i tipi di controllo WPF al progetto, è possibile includerli
 
 9. Il controllo `elementHost2` include ora un'istanza del tipo `UserControl1`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>

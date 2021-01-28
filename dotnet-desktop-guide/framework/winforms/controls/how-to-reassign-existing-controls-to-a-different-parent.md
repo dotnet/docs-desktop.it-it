@@ -6,15 +6,12 @@ helpviewer_keywords:
 - layout [Windows Forms], resizing
 - layout [Windows Forms], child controls
 ms.assetid: 5a5723ff-34e0-4b6f-a57b-be4ebe35cb34
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: 1767fcff1742f4ad630b4b996c709b7ded53a129
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 3d31611465eacf471470b90b7829be4a187d771f
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96952043"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957643"
 ---
 # <a name="how-to-reassign-existing-controls-to-a-different-parent"></a>Procedura: riassegnare i controlli esistenti a un padre diverso
 
@@ -38,7 +35,7 @@ ms.locfileid: "96952043"
 
    I tre controlli <xref:System.Windows.Forms.Button> sono stati inseriti nel controllo <xref:System.Windows.Forms.FlowLayoutPanel> .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.FlowLayoutPanel>
 - <xref:System.Windows.Forms.TableLayoutPanel>

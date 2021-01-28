@@ -8,15 +8,12 @@ helpviewer_keywords:
 - OnPaint method [Windows Forms]
 - custom controls [Windows Forms], creating
 ms.assetid: 46ba0df3-5cf7-443c-a3b4-a72660172476
-author: jillre
-ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: a00c4deb795800931f5dbf61b545b62acf971ff0
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: e897519a7c4ba4f16e315e69322c27543964c215
+ms.sourcegitcommit: 7f48b9ecf8a30db42c8ecea0dd4df577736631a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96961747"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957708"
 ---
 # <a name="how-to-inherit-from-the-control-class"></a>Procedura: Ereditare dalla classe Control
 
@@ -44,7 +41,7 @@ Se si vuole creare un controllo completamente personalizzato da usare in un Wind
 
 8. Salvare ed eseguire il test del controllo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Tipi di controlli personalizzati](varieties-of-custom-controls.md)
 - [Procedura: Ereditare dalla classe UserControl](how-to-inherit-from-the-usercontrol-class.md)
