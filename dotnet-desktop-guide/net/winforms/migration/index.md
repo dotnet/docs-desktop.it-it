@@ -3,12 +3,12 @@ title: Eseguire la migrazione di un'app Windows Form a .NET 5
 description: Informazioni su come trasferire un .NET Framework Windows Forms Application a .NET 5.
 ms.date: 11/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 84d12aeb376091aca2f10a750aff6f2fb3471d6f
-ms.sourcegitcommit: cf26656c126a55cfbfc06e2a89fe01c2b8df2b27
+ms.openlocfilehash: adf87df169217a5d190338bf9c4beaec873f0b69
+ms.sourcegitcommit: d7d89e96c827b6e20d9353d34c0aa329fdae0144
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97697421"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506711"
 ---
 # <a name="how-to-migrate-a-windows-forms-desktop-app-to-net-5"></a>Come eseguire la migrazione di un'app desktop Windows Form a .NET 5
 
@@ -163,9 +163,9 @@ Una cosa da notare sulla differenza tra i progetti .NET Framework e i progetti i
 
 I progetti Windows Form includono anche file specifici del progetto Windows Form, ad esempio _properties/Settings. Settings_ e _Properties/resources. resx_. Potrebbe essere necessario eseguire la migrazione di questi file, che vengono dichiarati nel progetto originale.
 
-Copiare le voci dal file di progetto precedente in un `<ItemGroup>` elemento del nuovo progetto. Dopo aver copiato le voci, modificare qualsiasi `<Compile Include="value">` `<EmbeddedResource Include="value">` elemento o in modo da usare invece `Update` di `Include` .
+Copiare le voci dal file di progetto precedente in un `<ItemGroup>` elemento del nuovo progetto. Dopo aver copiato le voci, modificare tutti `<Compile Include="value">` gli elementi in modo da usare invece l' `Update` attributo anziché `Include` .
 
-- Importare la configurazione per il file _Settings. Settings_ . Si noti che l' `<Compile>` attributo della voce `Update` è stato modificato da `Include` a `Update` perché i file di codice sono già inclusi:
+- Importare la configurazione per il file _Settings. Settings_ .
 
   ```xml
   <ItemGroup>
@@ -186,7 +186,7 @@ Copiare le voci dal file di progetto precedente in un `<ItemGroup>` elemento del
   > [!IMPORTANT]
   > I progetti **Visual Basic** usano in genere la cartella _My Project_ mentre i progetti C# usano in genere le _proprietà_ della cartella per il file di impostazioni del progetto predefinito.
   
-- Importare la configurazione per qualsiasi file _resx_ , ad esempio il file _Properties/resources. resx_ . Si noti che `Include` è stato modificato in `Update` in entrambi `<Compile>` gli `<EmbeddedResource>` elementi e ed `<SubType>` è stato rimosso da `<EmbeddedResource>` :
+- Importare la configurazione per qualsiasi file _resx_ , ad esempio il file _Properties/resources. resx_ . Si noti che l' `Include` attributo è stato modificato in nell' `Update` `<Compile>` elemento ed `<SubType>` è stato rimosso da `<EmbeddedResource>` :
 
   ```xml
   <ItemGroup>
