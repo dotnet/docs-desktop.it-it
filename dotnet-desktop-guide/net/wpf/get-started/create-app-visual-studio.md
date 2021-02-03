@@ -6,12 +6,12 @@ ms.topic: tutorial
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: c8a705b35bdd5193accf124deb67c24b2d02bb70
-ms.sourcegitcommit: d7d89e96c827b6e20d9353d34c0aa329fdae0144
+ms.openlocfilehash: b2769d4901b211cf5bc7cffbe4c1bf65d26a0758
+ms.sourcegitcommit: 455923e44f1e8df30a233807a54ded94ddc1cf62
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "99506872"
+ms.locfileid: "99510062"
 ---
 # <a name="tutorial-create-a-new-wpf-app-wpf-net"></a>Esercitazione: creare una nuova applicazione WPF (WPF .NET)
 
@@ -34,7 +34,7 @@ Ecco un'anteprima dell'app che verrà creata durante l'esercitazione seguente:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- [Visual Studio 2019 versione 16,9 o versioni successive](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf)
+- [Visual Studio 2019 versione 16.8.4 o versioni successive](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf)
   - Selezionare il [carico di lavoro di Visual Studio Desktop](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads)
   - Selezionare il [singolo componente .NET 5](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components)
 
@@ -54,20 +54,23 @@ Il primo passaggio per creare una nuova app è l'apertura di Visual Studio e la 
     > [!IMPORTANT]
     > Non selezionare il modello **applicazione WPF (.NET _Framework_)** .
 
-    :::image type="content" source="media/create-app-visual-studio/vs-template-search.png" alt-text="Cercare il modello WPF in Visual Studio 2019 per .NET":::
+    :::image type="content" source="media/create-app-visual-studio/vs-template-search-16.8.png" alt-text="Cercare il modello WPF in Visual Studio 2019 per .NET":::
 
 01. Nella finestra **Configura nuovo progetto** eseguire le operazioni seguenti:
 
     01. Nella casella **nome progetto** immettere **i nomi**.
     01. Selezionare la casella **di controllo posiziona soluzione e progetto nella stessa directory** .
     01. Facoltativamente, scegliere un **percorso** diverso per salvare il codice.
-    01. Selezionare il pulsante **Avanti**.
+    01. Selezionare il pulsante **Crea**.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project.png" alt-text="Configurare il nuovo progetto WPF in Visual Studio 2019 per .NET":::
+    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project-16.8.png" alt-text="Configurare il nuovo progetto WPF in Visual Studio 2019 per .NET":::
 
-01. Nella finestra **informazioni aggiuntive** selezionare **.NET 5,0 (corrente)** per Framework di **destinazione** e verificare che la casella di controllo **Esegui su .NET Framework** sia deselezionata. Selezionare il pulsante **Crea**.
+<!-- THIS IS FOR 16.9 when it's released. Also, change the last child step of the previous step to **Next**
 
-    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project-next.png" alt-text="Selezionare il Framework di destinazione per il nuovo progetto WPF in Visual Studio 2019 per .NET":::
+01. In the **Additional information** window, select **.NET 5.0 (Current)** for **Target Framework** and make sure that the **Run on .NET Framework** check box is cleared. Select the **Create** button.
+
+    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2019 for .NET":::
+-->
 
 Una volta generata l'app, Visual Studio dovrebbe aprire il riquadro finestra di progettazione XAML per la finestra predefinita, _MainWindow_. Se la finestra di progettazione non è visibile, fare doppio clic sul file _MainWindow. XAML_ nel riquadro **Esplora soluzioni** per aprire la finestra di progettazione.
 
@@ -101,9 +104,19 @@ Il supporto per WPF in Visual Studio include cinque componenti importanti con cu
 
     Quando sia la finestra di progettazione che l'editor sono visibili, le modifiche apportate a una vengono riflesse nell'altra. Quando si sposta il cursore del testo nell'editor di codice, nel riquadro **Proprietà** vengono visualizzate le proprietà e gli attributi relativi a tale oggetto.
 
+## <a name="target-net-50"></a>Destinazione .NET 5,0
+
+Dopo aver creato il progetto, modificare il Framework di destinazione in .NET 5,0. Fare doppio clic sul file di progetto _nomi_ nel **Esplora soluzioni**. Verrà aperto il file di progetto per la modifica. Impostare l' `<TargetFramework>` elemento su `net5.0-windows` :
+
+```xml
+<TargetFramework>net5.0-windows</TargetFramework>
+```
+
+Salvare il file di progetto e quindi chiudere la scheda dell'editor.
+
 ## <a name="examine-the-xaml"></a>Esaminare il codice XAML
 
-Quando il progetto viene aperto, l'editor di codice XAML è visibile con una quantità minima di codice XAML per visualizzare la finestra:
+Dopo la creazione del progetto, l'editor del codice XAML è visibile con una quantità minima di codice XAML per visualizzare la finestra. Se l'editor non è aperto, fare doppio clic sull'elemento _MainWindow. XAML_ nel **Esplora soluzioni**. Verrà visualizzato un codice XAML simile al seguente:
 
 ```xaml
 <Window x:Class="Names.MainWindow"
