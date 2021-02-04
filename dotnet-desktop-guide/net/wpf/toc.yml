@@ -6,7 +6,7 @@ items:
       - name: Panoramica
         href: overview/index.md
       - name: Creare un'applicazione WPF
-        href: /visualstudio/get-started/csharp/tutorial-wpf?view=vs-2019
+        href: get-started/create-app-visual-studio.md
   - name: Migrazione
     items:
       - name: Differenze rispetto a .NET Framework
