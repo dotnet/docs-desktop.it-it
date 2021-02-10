@@ -3,12 +3,12 @@ title: Eseguire la migrazione di un'app Windows Form a .NET 5
 description: Informazioni su come trasferire un .NET Framework Windows Forms Application a .NET 5.
 ms.date: 11/02/2020
 ms.topic: how-to
-ms.openlocfilehash: adf87df169217a5d190338bf9c4beaec873f0b69
-ms.sourcegitcommit: d7d89e96c827b6e20d9353d34c0aa329fdae0144
+ms.openlocfilehash: c855c074090c386f60e783b3a9b2bee9a7704c23
+ms.sourcegitcommit: 0a512a7965f8efa476eb024208479e4432a1fa72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99506711"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100101833"
 ---
 # <a name="how-to-migrate-a-windows-forms-desktop-app-to-net-5"></a>Come eseguire la migrazione di un'app desktop Windows Form a .NET 5
 
@@ -186,11 +186,11 @@ Copiare le voci dal file di progetto precedente in un `<ItemGroup>` elemento del
   > [!IMPORTANT]
   > I progetti **Visual Basic** usano in genere la cartella _My Project_ mentre i progetti C# usano in genere le _proprietà_ della cartella per il file di impostazioni del progetto predefinito.
   
-- Importare la configurazione per qualsiasi file _resx_ , ad esempio il file _Properties/resources. resx_ . Si noti che l' `Include` attributo è stato modificato in nell' `Update` `<Compile>` elemento ed `<SubType>` è stato rimosso da `<EmbeddedResource>` :
+- Importare la configurazione per qualsiasi file _resx_ , ad esempio il file _Properties/resources. resx_ . Si noti che l' `Include` attributo è stato impostato `Update` su `<Compile>` sull' `<EmbeddedResource>` elemento e ed `<SubType>` è stato rimosso da `<EmbeddedResource>` :
 
   ```xml
   <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
