@@ -22,12 +22,12 @@ helpviewer_keywords:
 - content models [XAML]
 - Extensible Application Markup Language (see XAML)
 - attribute syntax [XAML]
-ms.openlocfilehash: 5012cc06d411fc33ce208ef6eb2435f106f0ea11
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 455f0eb49491250913998015f38948a2d864432e
+ms.sourcegitcommit: 03df1de4077d996809eca885f6e2948774cf0fe7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96965839"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102101608"
 ---
 # <a name="xaml-overview-wpf-net"></a>Cenni preliminari su XAML (WPF .NET)
 
@@ -275,7 +275,7 @@ Si noti che il file code-behind usa lo spazio dei nomi CLR `ExampleNamespace` e 
 
 Per ulteriori informazioni sui requisiti per la programmazione code-behind in WPF, vedere [code-behind, gestore eventi e requisiti della classe parziale in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md#code-behind-event-handler-and-partial-class-requirements-in-wpf).
 
-Se non si desidera creare un file code-behind distinto, è anche possibile incorporare il codice in un file XAML. Tuttavia, il codice inline è una tecnica meno versatile che presenta limitazioni sostanziali. Per altre informaiton, vedere [code-behind e XAML in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
+Se non si desidera creare un file code-behind distinto, è anche possibile incorporare il codice in un file XAML. Tuttavia, il codice inline è una tecnica meno versatile che presenta limitazioni sostanziali. Per altre informazioni, vedere [code-behind e XAML in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
 
 ### <a name="routed-events"></a>Eventi indirizzati
 
@@ -331,7 +331,7 @@ A differenza di .NET Framework, WPF per .NET non supporta le autorità di certif
 
 Sebbene sia possibile usare XAML per definire un'interfaccia utente completa, è talvolta opportuno definire solo una parte dell'interfaccia utente tramite XAML. Questa funzionalità può risultare utile per consentire una personalizzazione parziale, l'archiviazione locale di informazioni, l'uso di XAML per offrire un oggetto business o per molti altri scenari possibili. La chiave di questi scenari è la <xref:System.Windows.Markup.XamlReader> classe e il relativo <xref:System.Windows.Markup.XamlReader.Load%2A> metodo. L'input è un file XAML, mentre l'output è un oggetto che rappresenta l'intera struttura ad albero di oggetti di runtime creata dal markup. È quindi possibile inserire l'oggetto in modo che sia una proprietà di un altro oggetto già esistente nell'app. Finché la proprietà è una proprietà appropriata nel modello di contenuto con funzionalità di visualizzazione finali e che invierà una notifica al motore di esecuzione in cui è stato aggiunto nuovo contenuto nell'app, è possibile modificare facilmente il contenuto di un'app in esecuzione eseguendo il caricamento in XAML.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Descrizione dettagliata della sintassi XAML](../../../framework/wpf/advanced/xaml-syntax-in-detail.md)
 - [Classi XAML e personalizzate per WPF](../../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
