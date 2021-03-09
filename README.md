@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: bb94fdbb36272e21b2aa56d8287a10a8d92396a8
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 77039903f6d0b3c7592c4fe12509d90301d0fe74
+ms.sourcegitcommit: 754c22d76466a56133dd9a8006ad685fc1cd3d0b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96952271"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102511597"
 ---
 # <a name="net-desktop-guide-docs"></a>Documentazione di .NET desktop Guide
 
-![Markdownlint](https://github.com/dotnet/docs-desktop/workflows/Markdownlint/badge.svg)
+![](https://github.com/dotnet/docs-desktop/workflows/Markdownlint/badge.svg) [ ![ Versione supportata della destinazione](https://github.com/dotnet/docs-desktop/actions/workflows/version-sweep.yml/badge.svg)](https://github.com/dotnet/docs-desktop/actions/workflows/version-sweep.yml) Markdownlint
 
-Questo repository contiene la documentazione concettuale per le tecnologie desktop .NET, ad esempio Windows Presentation Foundation (WPF) e Windows Forms (WinForms). Viene pubblicato nel sito della [documentazione di .NET desktop Guide](https://docs.microsoft.com/dotnet/desktop).
+Questo repository contiene la documentazione concettuale per le tecnologie desktop .NET, ad esempio Windows Presentation Foundation (WPF) e Windows Form (WinForms). Viene pubblicato nel sito della [documentazione di .NET desktop Guide](https://docs.microsoft.com/dotnet/desktop).
 
 ## <a name="issues"></a>Problemi
 
