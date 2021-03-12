@@ -7,12 +7,12 @@ helpviewer_keywords:
 - animation [WPF], accelerating
 - animation [WPF], decelerating
 ms.assetid: 4f383b2c-f94d-4a4e-9a06-f56f5dae95f9
-ms.openlocfilehash: 7ab55ba44b866a992b9021284f170858f0108d15
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 04912e4bd51aba5ddcea7bb5f5a91bbb6501b6c3
+ms.sourcegitcommit: 069786bcadbf9cd931d7dc3d892262cd852d2ffb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96966739"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102604290"
 ---
 # <a name="how-to-accelerate-or-decelerate-an-animation"></a>Procedura: accelerare o decelerare un'animazione
 
@@ -21,4 +21,4 @@ Questo esempio illustra come rendere un'animazione accelerata e decelerata nel t
 ## <a name="example"></a>Esempio  
  [!code-xaml[timingbehaviors_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/AccelDecelExample.xaml#1)]  
   
- Il codice è stato omesso da questo esempio. Per il codice completo, vedere il comportamento della [temporizzazione dell'animazione (C#)](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_procedural_snip/CSharp) o il [comportamento della temporizzazione dell'animazione (Visual Basic)](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/timingbehaviors_procedural_snip/visualbasic).
+ Il codice è stato omesso da questo esempio. Per il codice completo, vedere il comportamento della [temporizzazione dell'animazione (C#)](https://github.com/dotnet/docs-desktop/tree/main/dotnet-desktop-guide/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_procedural_snip/CSharp) o il [comportamento della temporizzazione dell'animazione (Visual Basic)](https://github.com/dotnet/docs-desktop/tree/main/dotnet-desktop-guide/samples/snippets/visualbasic/VS_Snippets_Wpf/timingbehaviors_procedural_snip/visualbasic).

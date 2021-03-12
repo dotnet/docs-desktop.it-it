@@ -5,16 +5,16 @@ author: mjrousos
 ms.date: 09/12/2019
 ms.author: mikerou
 ms.topic: how-to
-ms.openlocfilehash: f9267ca1da922858f8d6acf470bf4831301335fd
-ms.sourcegitcommit: 9f6df084c53a3da0ea657ed0d708a72213683084
+ms.openlocfilehash: 148c1e4b21ccf4dbdb80bc17f1637a8407732cf0
+ms.sourcegitcommit: 069786bcadbf9cd931d7dc3d892262cd852d2ffb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96969670"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102604329"
 ---
 # <a name="migrating-wpf-apps-to-net-core"></a>Migrazione di app WPF a .NET Core
 
-Questo articolo illustra i passaggi necessari per eseguire la migrazione di un'app Windows Presentation Foundation (WPF) da .NET Framework a .NET Core 3,0. Se non si ha un'app WPF a disposizione per la porta, ma si vuole provare il processo, è possibile usare l'app **Bean trader** di esempio disponibile in [GitHub](https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader). L'app originale (destinazione .NET Framework 4.7.2) è disponibile nella cartella NetFx\BeanTraderClient. Prima di tutto verranno illustrati i passaggi necessari per la portabilità delle app in generale e verranno illustrate le modifiche specifiche che si applicano all'esempio **Bean trader** .
+Questo articolo illustra i passaggi necessari per eseguire la migrazione di un'app Windows Presentation Foundation (WPF) da .NET Framework a .NET Core 3,0. Se non si ha un'app WPF a disposizione per la porta, ma si vuole provare il processo, è possibile usare l'app **Bean trader** di esempio disponibile in [GitHub](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader). L'app originale (destinazione .NET Framework 4.7.2) è disponibile nella cartella NetFx\BeanTraderClient. Prima di tutto verranno illustrati i passaggi necessari per la portabilità delle app in generale e verranno illustrate le modifiche specifiche che si applicano all'esempio **Bean trader** .
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
@@ -46,7 +46,7 @@ Per eseguire la migrazione a .NET Core, è prima di tutto necessario:
 
 ## <a name="about-the-sample"></a>Informazioni sull'esempio
 
-Questo articolo fa riferimento all' [app Bean trader di esempio](https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader) perché usa un'ampia gamma di dipendenze simili a quelle che possono avere le app WPF reali. L'app non è di grandi dimensioni, ma è concepita come un passaggio da "Hello World" in termini di complessità. L'app illustra alcuni problemi che possono verificarsi durante il trasferimento di app reali. L'app comunica con un servizio WCF, in modo che venga eseguita correttamente, sarà anche necessario eseguire il progetto BeanTraderServer (disponibile nello stesso repository GitHub) e assicurarsi che la configurazione di BeanTraderClient punti all'endpoint corretto. Per impostazione predefinita, nell'esempio si presuppone che il server sia in esecuzione nello stesso computer in `http://localhost:8090` , che sarà true se si avvia BeanTraderServer localmente.
+Questo articolo fa riferimento all' [app Bean trader di esempio](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader) perché usa un'ampia gamma di dipendenze simili a quelle che possono avere le app WPF reali. L'app non è di grandi dimensioni, ma è concepita come un passaggio da "Hello World" in termini di complessità. L'app illustra alcuni problemi che possono verificarsi durante il trasferimento di app reali. L'app comunica con un servizio WCF, in modo che venga eseguita correttamente, sarà anche necessario eseguire il progetto BeanTraderServer (disponibile nello stesso repository GitHub) e assicurarsi che la configurazione di BeanTraderClient punti all'endpoint corretto. Per impostazione predefinita, nell'esempio si presuppone che il server sia in esecuzione nello stesso computer in `http://localhost:8090` , che sarà true se si avvia BeanTraderServer localmente.
 
 Tenere presente che questa applicazione di esempio ha lo scopo di illustrare le soluzioni e le soluzioni di porting di .NET Core. Non è progettato per illustrare le procedure consigliate per WPF. In realtà, include deliberatamente alcuni anti-modelli per assicurarsi di affrontare almeno un paio di problemi interessanti durante il trasferimento.
 
